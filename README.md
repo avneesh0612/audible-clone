@@ -1,41 +1,75 @@
+# Audible clone (open source)
 
-# Nextjs tailwind starter template
+We are going to create a pr. You need to know basic git and github commands to make a pr. If you don't know about it, check my [Git and Github crash course](https://medium.com/geekculture/git-and-github-crash-course-b44f4885ff66 "Git and Github crash course")
 
-This is a starter template which provides you a Next app with tailwind CSS already set up.
+Click on fork in the top left corner of your screen. Clone the repo you have been redirected to
 
-Steps to use 
-
- ### If you have git installed 
-
-* git clone https://github.com/avneesh0612/Nextjs-tailwind-starter-template
- 
-* cd into the app
-```bash 
-cd Nextjs-tailwind-starter-template
+```bash
+git clone url_redirected_to
 ```
-* If you use yarn then run 
-```bash 
-yarn install 
+
+### Installing dependencies
+
+If you use yarn then run
+
+```bash
+yarn install
 ```
-and if you use npm delete yarn.lock and run 
-```bash 
+
+and if you use npm delete yarn.lock and run
+
+```bash
 npm install
 ```
-### If you don't have git installed
-* Click on download zip
 
-![Download zip](https://res.cloudinary.com/dssvrf9oz/image/upload/v1622705456/Screenshot_2021-06-03_130034_txerpn.png)
+### Creating a new branch
 
-* cd into the app
-```bash 
-cd Nextjs-tailwind-starter-template
+```bash
+git checkout -b new-feature
 ```
-* If you use yarn then run 
-```bash 
-yarn install 
+
+### Starting server
+
+If you are using yarn then run
+
+```bash
+yarn dev
 ```
-and if you use npm delete yarn.lock and run 
-```bash 
-npm install
+
+and if you using npm run
+
+```bash
+npm run dev
 ```
-You are ready to go 🥳
+
+You can use some accounts to test your features.
+
+## Submitting the new features.
+
+### Setting up next auth
+
+If you don't know about next auth follow this tutorial and get your credentials.
+And your .env.local file will look like this
+
+```bash
+GOOGLE_CLIENT_ID=client_id
+GOOGLE_CLIENT_SECRET=client_secret
+NEXTAUTH_URL=http://localhost:3000/
+```
+
+### Pushing the code to Github
+
+```bash
+git add .
+git commit -m "commit message (what you added)"
+git push origin new-feature
+```
+
+In github if you refresh the page.
+
+- You can see a button Compare and Pull request.
+- Click on that button.
+
+Now just add a title and description and create a pull request.
+
+You have successfully created a pull request and I will review and merge it soon.

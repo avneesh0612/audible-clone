@@ -16,16 +16,16 @@ function Header({ session }) {
   };
 
   return (
-    <header className="sticky mt-5">
+    <header className="sticky mt-5 font-poppins">
       <header className="flex text-xs font-semibold">
         <p className="ml-auto ">
           {session ? (
-            <span className="focus:outline-none ml-3 border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
+            <span className="font-poppins focus:outline-none ml-3 border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
               Hi, {session.user.name}
             </span>
           ) : (
             <span
-              className=" focus:outline-none ml-3 border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100"
+              className="font-audible focus:outline-none ml-3 border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100"
               onClick={() => signIn()}
             >
               Sign in
@@ -74,9 +74,9 @@ function Header({ session }) {
             </p>
           </div>
         </div>
-        <div className="flex ring-1 ring-gray-400 px-4 items-center py-2 mr-2">
+        <div className="flex ring-1 ring-gray-400 px-4 items-center py-2 mr-2 w-60 justify-between">
           <input
-            className="focus:outline-none text-sm"
+            className="focus:outline-none text-xs"
             placeholder="Search for a great book"
           />
           <SearchIcon className="w-5 h-5 text-gray-500" />

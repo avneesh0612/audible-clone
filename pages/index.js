@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import Banner from "../components/Banner";
 import { getSession } from "next-auth/client";
 
 export default function Home({ session }) {
@@ -12,6 +13,7 @@ export default function Home({ session }) {
       </Head>
 
       <Header session={session} />
+      <Banner />
     </div>
   );
 }

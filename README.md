@@ -48,7 +48,9 @@ You can use some accounts to test your features.
 
 ### Setting up next auth
 
-If you don't know about next auth follow this tutorial and get your credentials.
+If you don't know about next auth follow this
+[tutorial](https://medium.com/geekculture/why-and-how-to-get-started-with-next-auth-61740558b45b "Next auth crash course")
+tutorial and get your credentials.
 And your .env.local file will look like this
 
 ```bash

@@ -60,10 +60,26 @@ function Header({ session }) {
                 <ChevronDownIcon className="w-3 h-3 text-gray-700 ml-1 mb-1" />
               </button>
               {isComponentVisible ? (
-                <div ref={ref} className="absolute top-20">
-                  <p>Option 1</p>
-                  <p>Option 2</p>
-                  <p>Option 3</p>
+                <div ref={ref} className="absolute top-20 browse-hover ">
+                  <h1 className=" text-gray-700 " >Audiobook Categories</h1>
+                  <div className="flex flex-row" >
+                    <div>
+                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Fiction</p>
+                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Sci-Fi and Fantasy</p>
+                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Mysteries and Thrillers</p>
+                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Romance</p>
+                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Teen and Young Adult</p>
+                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Religion and Spirituality</p>
+                    </div>
+                    <div>
+                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Self-Development</p>
+                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Biographies & Memoirs</p>
+                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Mysteries and Thrillers</p>
+                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Romance</p>
+                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Teen and Young Adult</p>
+                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Religion and Spirituality</p>
+                    </div>
+                  </div>
                 </div>
               ) : (
                 <></>

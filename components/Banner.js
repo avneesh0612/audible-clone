@@ -3,7 +3,7 @@ import BannerCheck from "./BannerCheck";
 
 function Banner() {
   return (
-    <div className="flex h-[50vh] bg-sapGreen mt-10">
+    <div style={{ zIndex: "-1" }} className="flex h-[50vh] bg-sapGreen mt-10">
       <div className="relative w-[51vw] h-full">
         <Image
           layout="fill"
@@ -12,7 +12,7 @@ function Banner() {
           alt="Banner"
         />
       </div>
-      <div className="-ml-3 z-10">
+      <div className="-ml-3">
         <h2 className="text-white font-poppins text-3xl mt-5 font-semibold">
           Try Audible today
         </h2>

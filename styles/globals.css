@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .dropdown_option {
+    @apply cursor-pointer mr-3 border-b-2 border-transparent hover:border-gray-800;
+  }
+}
+
 @layer base {
   @font-face {
     font-family: "Audible";

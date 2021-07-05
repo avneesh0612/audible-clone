@@ -16,7 +16,7 @@ function Header({ session }) {
   };
 
   return (
-    <header className="sticky mt-5 font-poppins">
+    <header className="sticky mt-5 font-poppins !z-50">
       <header className="flex text-xs font-semibold">
         <p className="ml-auto ">
           {session ? (
@@ -50,7 +50,7 @@ function Header({ session }) {
             <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
               Home
             </p>
-            <div className="flex">
+            <div className="flex !z-50">
               <button
                 className="flex focus:outline-none items-end border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100"
                 ref={ref}
@@ -60,24 +60,31 @@ function Header({ session }) {
                 <ChevronDownIcon className="w-3 h-3 text-gray-700 ml-1 mb-1" />
               </button>
               {isComponentVisible ? (
-                <div ref={ref} className="absolute top-20 browse-hover ">
-                  <h1 className=" text-gray-700 " >Audiobook Categories</h1>
-                  <div className="flex flex-row" >
+                <div
+                  ref={ref}
+                  className="absolute top-20 p-3 border-2 border-gray-400 rounded-lg !z-50 bg-white"
+                >
+                  <h1 className=" text-gray-700 ">Audiobook Categories</h1>
+                  <div className="flex flex-row">
                     <div>
-                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Fiction</p>
-                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Sci-Fi and Fantasy</p>
-                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Mysteries and Thrillers</p>
-                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Romance</p>
-                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Teen and Young Adult</p>
-                      <p className="cursor-pointer mr-3 border-b-2 hover:border-gray-800" >Religion and Spirituality</p>
+                      <p className="dropdown_option">Fiction</p>
+                      <p className="dropdown_option">Sci-Fi and Fantasy</p>
+                      <p className="dropdown_option">Mysteries and Thrillers</p>
+                      <p className="dropdown_option">Romance</p>
+                      <p className="dropdown_option">Teen and Young Adult</p>
+                      <p className="dropdown_option">
+                        Religion and Spirituality
+                      </p>
                     </div>
                     <div>
-                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Self-Development</p>
-                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Biographies & Memoirs</p>
-                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Mysteries and Thrillers</p>
-                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Romance</p>
-                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Teen and Young Adult</p>
-                      <p className="cursor-pointer  border-b-2 hover:border-gray-800" >Religion and Spirituality</p>
+                      <p className="dropdown_option">Self-Development</p>
+                      <p className="dropdown_option">Biographies & Memoirs</p>
+                      <p className="dropdown_option">Mysteries and Thrillers</p>
+                      <p className="dropdown_option">Romance</p>
+                      <p className="dropdown_option">Teen and Young Adult</p>
+                      <p className="dropdown_option">
+                        Religion and Spirituality
+                      </p>
                     </div>
                   </div>
                 </div>

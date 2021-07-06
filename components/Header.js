@@ -67,7 +67,7 @@ function Header({ session }) {
                 {isComponentVisible ? (
                   <div
                     ref={ref}
-                    className="absolute top-20 p-3 border-2 border-gray-400 rounded-lg !z-50 bg-white"
+                    className="absolute top-20 p-3 border-2 border-gray-400 rounded-md !z-50 bg-white"
                   >
                     <h1 className=" text-gray-700 ">Audiobook Categories</h1>
                     <div className="flex flex-row">

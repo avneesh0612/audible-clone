@@ -8,6 +8,9 @@
   .dropdown_option {
     @apply cursor-pointer mr-3 border-b-2 border-transparent hover:border-gray-800;
   }
+  .button {
+    @apply bg-gradient-to-b from-yellow-200 to-yellow-400 p-1 border border-yellow-300  focus:outline-none focus:ring-2 focus:ring-yellow-500 active:from-yellow-500 active:to-yellow-400 disabled:from-gray-200 disabled:to-gray-300 disabled:border-gray-400 rounded-xl   font-bold;
+  }
 }
 
 @layer base {
@@ -15,4 +18,8 @@
     font-family: "Audible";
     src: url("/fonts/audible.woff2") format("woff2");
   }
+}
+
+html {
+    scroll-behavior: smooth;
 }

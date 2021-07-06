@@ -2,6 +2,7 @@ import Image from "next/image";
 import useComponentVisible from "../hooks/useComponentVisible";
 import { ChevronDownIcon, SearchIcon } from "@heroicons/react/outline";
 import { getSession, signIn, signOut } from "next-auth/client";
+import Fade from 'react-reveal/Fade';
 
 function Header({ session }) {
   const { ref, isComponentVisible, setIsComponentVisible } =
@@ -16,7 +17,9 @@ function Header({ session }) {
   };
 
   return (
-    <header className="sticky mt-5 font-poppins !z-50">
+
+    <header className="sticky mt-2 font-poppins !z-20">
+          <Fade top>
       <header className="flex text-xs font-semibold">
         <p className="ml-auto ">
           {session ? (
@@ -105,7 +108,9 @@ function Header({ session }) {
           <SearchIcon className="w-5 h-5 text-gray-500" />
         </div>
       </header>
+      </Fade>
     </header>
+
   );
 }
 

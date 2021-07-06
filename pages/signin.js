@@ -50,7 +50,7 @@ export async function getServerSideProps(context) {
       Location: "/",
     });
     res.end();
-    return;
+    return null;
   }
 
   return {

@@ -44,7 +44,6 @@ npm run dev
 
 You can use some accounts to test your features.
 
-## Submitting the new features.
 
 ### Setting up next auth
 
@@ -58,7 +57,7 @@ GOOGLE_CLIENT_ID=client_id
 GOOGLE_CLIENT_SECRET=client_secret
 NEXTAUTH_URL=http://localhost:3000/
 ```
-
+## Submitting the new features.
 ### Pushing the code to Github
 
 ```bash

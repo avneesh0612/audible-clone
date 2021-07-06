@@ -53,7 +53,7 @@ function Header({ session }) {
             />
             <div className="flex justify-evenly ml-4  mt-2 space-x-8">
               <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
-                Home
+                <a href="/">Home</a>
               </p>
               <div className="flex !z-50">
                 <button
@@ -102,7 +102,7 @@ function Header({ session }) {
                 )}
               </div>
               <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
-                About Membership
+                <a href="/aboutmembership">About Membership</a>
               </p>
             </div>
           </div>

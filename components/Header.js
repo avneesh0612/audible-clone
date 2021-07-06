@@ -22,7 +22,7 @@ function Header({ session }) {
 
   return (
     <Fade top>
-      <header className="sticky mt-2 font-poppins !z-20">
+      <header className="mt-2 font-poppins !z-20">
           <header className="flex text-xs font-semibold px-3">
             <div className="ml-auto">
               {session ? (

@@ -3,9 +3,37 @@ import { providers, signIn, getSession, csrfToken } from "next-auth/client";
 import Image from "next/image";
 import Head from "next/head";
 import Header from "../components/Header";
+import { motion } from "framer-motion";
 
 export default function SignIn({ providers }) {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+  
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
+  
   return (
+    <motion.ul
+    className="container"
+    variants={container}
+    initial="hidden"
+    animate="visible"
+    >
+      <motion.li className="item" variants={item} >
     <div className="bg-white h-screen">
       <Head>
         <title>Audible Sign in</title>
@@ -13,7 +41,7 @@ export default function SignIn({ providers }) {
         <link rel="icon" href="https://www.audible.in/favicon.ico" />
       </Head>
       <Header />
-      <div className="w-80 h-[70vh] mx-auto grid place-items-center bg-gray-100 mt-5 rounded-lg">
+      <div className="w-80 h-[70vh] mx-auto grid place-items-center bg-gray-100 mt-5 rounded-lg item">
         <Image
           width={140}
           height={54}
@@ -38,6 +66,8 @@ export default function SignIn({ providers }) {
         </div>
       </div>
     </div>
+    </motion.li>
+    </motion.ul>
   );
 }
 

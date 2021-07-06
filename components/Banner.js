@@ -6,7 +6,7 @@ function Banner() {
   return (
     <div
       style={{ zIndex: "-1" }}
-      className="flex h-[50vh] w-screen bg-sapGreen mt-10"
+      className="flex w-screen h-[50vh] bg-sapGreen mt-10"
     >
       <div className="relative w-[51vw] h-full">
         <Image
@@ -45,5 +45,4 @@ function Banner() {
     </div>
   );
 }
-
 export default Banner;

@@ -16,7 +16,7 @@ function Banner() {
           alt="Banner"
         />
       </div>
-      <div className="-ml-3">
+      <div>
         <h2 className="text-white font-poppins text-3xl mt-5 font-semibold">
           Try Audible today
         </h2>

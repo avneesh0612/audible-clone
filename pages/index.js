@@ -2,8 +2,23 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import { getSession } from "next-auth/client";
+import db from "../firebase";
+import { useEffect } from "react";
 
 export default function Home({ session }) {
+  useEffect(() => {
+    if (session?.user) {
+      db.collection("users").doc(session?.user.email).set(
+        {
+          email: session?.user.email,
+          name: session?.user.name,
+          photoURL: session?.user.image,
+        },
+        { merge: true }
+      );
+    }
+  }, [session?.user]);
+
   return (
     <div>
       <Head>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BannerCheck from "./BannerCheck";
+import Fade from 'react-reveal/Fade';
 
 function Banner() {
   return (
@@ -17,15 +18,19 @@ function Banner() {
           Try Audible today
         </h2>
         <div className="flex flex-col max-w-md">
-          <BannerCheck
-            text="1 credit a month to use on any audiobook of your choice. Choose from
-            over 200,000 English and Hindi audiobooks."
-          />
-          <BannerCheck text="All the audiobooks in your Audible library are yours to keep, even if you cancel the membership." />
-          <BannerCheck text="Free, unlimited listening to Audible Original shows. Download as many as you’d like." />
-          <BannerCheck text="Listen offline, at no extra cost." />
+        <Fade left cascade>
+          <div>
+            <BannerCheck
+              text="1 credit a month to use on any audiobook of your choice. Choose from
+              over 200,000 English and Hindi audiobooks."
+            />
+            <BannerCheck text="All the audiobooks in your Audible library are yours to keep, even if you cancel the membership." />
+            <BannerCheck text="Free, unlimited listening to Audible Original shows. Download as many as you’d like." />
+            <BannerCheck text="Listen offline, at no extra cost." />
+          </div>
+        </Fade>
           <div className="w-80 ml-9">
-            <button className="hover:bg-[#FFC849] bg-[#FFA000] py-2   rounded-md mt-2 w-full">
+            <button className=" transition duration-500 ease-in-out bg-[#FFA000] hover:bg-[#FFC849] py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-2 w-full">
               Start your free trial now
             </button>
             <p className="text-white text-opacity-60 text-xs text-center">

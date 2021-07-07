@@ -5,7 +5,10 @@ import { getSession, signIn, signOut } from "next-auth/client";
 import Fade from "react-reveal/Fade";
 import { motion } from "framer-motion";
 import { useState } from "react";
+<<<<<<< HEAD
 import { useRouter } from "next/router"
+=======
+>>>>>>> upstream/main
 
 function Header({ session }) {
   const { ref, isComponentVisible, setIsComponentVisible } =
@@ -49,16 +52,23 @@ function Header({ session }) {
             </span>
           </header>
           <header className="flex items-center px-5 justify-between mt-2 max-w-5xl mx-auto w-full">
+<<<<<<< HEAD
             <div className="cursor-pointer"              onClick={() => router.push("/")}>
+=======
+>>>>>>> upstream/main
             <Image
                 width={140}
                 height={54}
                 objectFit="contain"
                 src="https://m.media-amazon.com/images/G/31/audibleweb/arya/navigation/audible_logo._CB490888215_.svg"
+<<<<<<< HEAD
                 className="cursor-pointer"
    
             />
             </div>
+=======
+            />
+>>>>>>> upstream/main
             <div className="hidden sm:flex items-center flex-1">
               <div className="flex justify-evenly items-center ml-4  mt-2 space-x-8">
                 <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
@@ -110,6 +120,7 @@ function Header({ session }) {
                     </motion.div>
                   }
                 </div>
+<<<<<<< HEAD
                 <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100" onClick={() => router.push("/aboutmembership")}>
                   About Membership
                 </p>
@@ -122,6 +133,20 @@ function Header({ session }) {
               />
               <SearchIcon className="w-5 h-5 text-gray-500" />
             </div>
+=======
+                <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
+                  About Membership
+                </p>
+              </div>
+            </div>
+            <div className="flex ring-1 ring-gray-400 px-4 items-center py-2 mr-2 w-60 justify-between">
+              <input
+                className="focus:outline-none text-xs"
+                placeholder="Search for a great book"
+              />
+              <SearchIcon className="w-5 h-5 text-gray-500" />
+            </div>
+>>>>>>> upstream/main
             {
               isNavOpen?
               <ChevronUpIcon 
@@ -173,7 +198,11 @@ function Header({ session }) {
                 <p>Category 5</p>
               </motion.div>
             
+<<<<<<< HEAD
             <p className="p-3" onClick={() => router.push("/aboutmembership")}>About Membership</p>
+=======
+            <p className="p-3">About Membership</p>
+>>>>>>> upstream/main
           </motion.nav>
           
       </header>

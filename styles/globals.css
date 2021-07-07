@@ -16,8 +16,8 @@
   }
 }
 
-.carousel .slider-wrapper {
-  width: 100vw;
+.carousel.carousel-slider {
+  width: 100vw !important;
 }
 
 body::-webkit-scrollbar {

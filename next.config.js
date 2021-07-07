@@ -1,4 +1,12 @@
-module.exports = {
+const withPWA = require("next-pwa");
+
+module.exports = withPWA({
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+  },
+
   images: {
     domains: ["res.cloudinary.com", "m.media-amazon.com"],
   },
@@ -11,4 +19,4 @@ module.exports = {
     firebase_messagingSenderId: process.env.FIREBASE_MESSAGEING_SENDER_ID,
     firebase_appId: process.env.FIREBASE_APP_ID,
   },
-};
+});

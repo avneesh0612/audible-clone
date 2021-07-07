@@ -5,13 +5,14 @@ import { getSession, signIn, signOut } from "next-auth/client";
 import Fade from "react-reveal/Fade";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useRouter } from 'next/router'
 
 function Header({ session }) {
   const { ref, isComponentVisible, setIsComponentVisible } =
     useComponentVisible(false);
 
   const [isNavOpen, setIsNavOpen] = useState(false)
-
+  const router = useRouter()
   const handleDropdown = () => {
     if (!isComponentVisible) {
       setIsComponentVisible(true);
@@ -51,7 +52,9 @@ function Header({ session }) {
             <Image
                 width={140}
                 height={54}
+                className="cursor-pointer"
                 objectFit="contain"
+                onClick={() => router.push('/')}
                 src="https://m.media-amazon.com/images/G/31/audibleweb/arya/navigation/audible_logo._CB490888215_.svg"
             />
             <div className="hidden sm:flex items-center flex-1">

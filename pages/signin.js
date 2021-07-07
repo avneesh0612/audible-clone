@@ -5,16 +5,16 @@ import Head from "next/head";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { BoxesLoader } from "react-awesome-loaders";
+import Loader from "../components/Loader";
 
 export default function SignIn({ providers }) {
-  const  [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
-    }, 2000)
-  }, [])
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -51,46 +51,37 @@ export default function SignIn({ providers }) {
             <link rel="icon" href="https://www.audible.in/favicon.ico" />
           </Head>
 
-          { 
-            loading?
-            <BoxesLoader
-            boxColor={"#FFC849"}
-            style={{ marginBottom: "20px" ,
-                      marginTop: "100px"}}
-            desktopSize={"128px"}
-            mobileSize={"80px"}
-            className="grid place-items-center"
-            />
-            :
+          {loading ? (
+            <Loader />
+          ) : (
             <>
-            <Header />
-            <div className="w-80 h-[70vh] mx-auto grid place-items-center bg-gray-100 mt-5 rounded-lg item">
-            <Image
-              width={140}
-              height={54}
-              objectFit="contain"
-              src="https://m.media-amazon.com/images/G/31/audibleweb/arya/navigation/audible_logo._CB490888215_.svg"
-            />
-            <div>
-              <div>
-                {Object.values(providers).map((provider) => {
-                  return (
-                    <div key={provider.name}>
-                      <button
-                        className="button"
-                        onClick={() => signIn(provider.id)}
-                      >
-                        Sign in with {provider.name}
-                      </button>
-                    </div>
-                  );
-                })}
+              <Header />
+              <div className="w-80 h-[70vh] mx-auto grid place-items-center bg-gray-100 mt-5 rounded-lg item">
+                <Image
+                  width={140}
+                  height={54}
+                  objectFit="contain"
+                  src="https://m.media-amazon.com/images/G/31/audibleweb/arya/navigation/audible_logo._CB490888215_.svg"
+                />
+                <div>
+                  <div>
+                    {Object.values(providers).map((provider) => {
+                      return (
+                        <div key={provider.name}>
+                          <button
+                            className="button"
+                            onClick={() => signIn(provider.id)}
+                          >
+                            Sign in with {provider.name}
+                          </button>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          </>
-            }
-
+            </>
+          )}
         </div>
       </motion.li>
     </motion.ul>

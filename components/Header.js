@@ -113,7 +113,7 @@ function Header({ session }) {
                 </p>
               </div>
             </div>
-            <div className="flex ring-1 ring-gray-400 px-4 items-center py-2 mr-2 w-60 justify-between">
+            <div className="flex ring-1 ring-gray-400 px-4 items-center py-2 mx-5 w-60 justify-between">
               <input
                 className="focus:outline-none text-xs"
                 placeholder="Search for a great book"
@@ -160,7 +160,7 @@ function Header({ session }) {
               }
             </p>
               <motion.div 
-                className={isComponentVisible && "pb-3"}
+                className={`max-h-12 ${isComponentVisible && "pb-3"}`}
                 initial={{height: 0}} 
                 animate={isComponentVisible ? {height: "auto", visibility: "visible"} : {height: 0, visibility: "hidden"}}
               >

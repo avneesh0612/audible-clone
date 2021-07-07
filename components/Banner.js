@@ -6,9 +6,9 @@ function Banner() {
   return (
     <div
       style={{ zIndex: "-1" }}
-      className="flex w-screen h-[50vh] bg-sapGreen mt-10"
+      className="flex flex-col md:flex-row w-screen md:h-[50vh] bg-sapGreen mt-10"
     >
-      <div className="relative w-[51vw] h-full">
+      <div className="relative min-w-screen md:w-[51vw] md:h-full h-96">
         <Image
           layout="fill"
           objectFit="contain"
@@ -16,7 +16,7 @@ function Banner() {
           alt="Banner"
         />
       </div>
-      <div>
+      <div className="mx-auto md:mx-0">
         <h2 className="text-white font-poppins text-3xl mt-5 font-semibold">
           Try Audible today
         </h2>

@@ -143,8 +143,8 @@ function Header({ session }) {
             className="sm:hidden px-4 text-center"
           >
             <p className="p-3">Home</p>
-            <p className="p-3 flex justify-center cursor-pointer" onClick={() => setIsComponentVisible(!isComponentVisible)}>
-              Browse
+            <p className="p-3 flex justify-center cursor-pointer max-h-12" onClick={() => setIsComponentVisible(!isComponentVisible)}>
+              <p>Browse</p>
 
               {
                 isComponentVisible?
@@ -160,7 +160,7 @@ function Header({ session }) {
               }
             </p>
               <motion.div 
-                className={`max-h-12 ${isComponentVisible && "pb-3"}`}
+                className={`${isComponentVisible && "pb-3"}`}
                 initial={{height: 0}} 
                 animate={isComponentVisible ? {height: "auto", visibility: "visible"} : {height: 0, visibility: "hidden"}}
               >

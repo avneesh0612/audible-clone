@@ -12,6 +12,8 @@ import FAQItem from "../components/FAQItem";
 import Loader from "../components/Loader";
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
+import FeatureItem from "../components/FeatureItem";
+
 export default function Home({ session }) {
   const [loading, setLoading] = useState(false);
 
@@ -57,7 +59,6 @@ export default function Home({ session }) {
 
   return (
     <motion.ul
-      className="container"
       variants={container}
       initial="hidden"
       animate="visible"
@@ -115,7 +116,7 @@ export default function Home({ session }) {
               </div>
             </div>
 
-            <div className="bg-gray-200 400 my-12 p-5 w-full">
+            <div className="bg-gray-200 my-12 p-5 w-full">
               <div className="max-w-7xl mx-auto">
               <Fade left >
                 <FAQItem
@@ -137,6 +138,26 @@ export default function Home({ session }) {
                 </Fade>
               </div>
             </div>
+
+            <div className="my-12 p-5">
+              <div 
+                className="max-w-7xl mx-auto w-full py-14 min-h-[500px]"
+                style={{
+                  backgroundImage: "url(https://m.media-amazon.com/images/G/02/AudibleUK/en_GB/hero_images/UK-1727-Mythos-Landing_DT_App_2000x650_v01._CB1198675309_.jpg)",
+                  backgroundSize: "cover",
+                }}
+              >
+                <h1 className="text-3xl font-bold">Learn More</h1>
+                <div className="md:w-1/2">
+                  <FeatureItem title="Get one audiobook every month" description="Members get 1 credit a month, good for any title regardless of price. Choose from Audible Originals, best sellers, and more." />
+                  <FeatureItem title="Audible Original Podcasts" description="Members get free, unlimited listening to documentaries, comedies and more." />
+                  <FeatureItem title="Offline Access" description="Download your audiobooks to your app so you can listen without using data or Wi-Fi, at no extra cost." />
+                  <FeatureItem title="Customisable Narration Speed" description="Pick the pace that works for you. Vary the listening speed from 0.5x to 3x." />
+                </div>
+              </div>
+
+            </div>
+            
 
             <Footer />
           </div>

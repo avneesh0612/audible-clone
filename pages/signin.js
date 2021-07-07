@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Loader from "../components/Loader";
+import Pulse from 'react-reveal/Pulse';
 
 export default function SignIn({ providers }) {
   const [loading, setLoading] = useState(false);
@@ -56,6 +57,7 @@ export default function SignIn({ providers }) {
           ) : (
             <>
               <Header />
+              <Pulse>
               <div className="w-80 h-[70vh] mx-auto grid place-items-center bg-gray-100 mt-5 rounded-lg item">
                 <Image
                   width={140}
@@ -80,6 +82,7 @@ export default function SignIn({ providers }) {
                   </div>
                 </div>
               </div>
+              </Pulse>
             </>
           )}
         </div>

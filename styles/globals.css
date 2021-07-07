@@ -9,7 +9,7 @@
     @apply cursor-pointer mr-3 border-b-2 border-transparent hover:border-gray-800;
   }
   .button {
-    @apply transition duration-500 ease-in-out bg-[#FFA000] hover:bg-[#FFC849] py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-2  font-medium px-6 py-2 my-1;
+    @apply transition duration-500 ease-in-out bg-[#FFA000] hover:bg-[#FFC849] py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-2  font-medium px-6 my-1;
   }
   body {
     @apply font-poppins;

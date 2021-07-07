@@ -82,7 +82,7 @@ export default function SignIn({ providers }) {
                   </div>
                 </div>
               </div>
-              </Pulse>
+              </Pulse>  
             </>
           )}
         </div>

@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         sapGreen: "#334249",
       },
+      width: {
+        screen: "99.5vw",
+      },
     },
   },
   variants: {

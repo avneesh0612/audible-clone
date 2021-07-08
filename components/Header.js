@@ -108,7 +108,7 @@ function Header({ session }) {
                     </motion.div>
                   }
                 </div>
-                <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
+                <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100" onClick={() => router.push("/membership")}>
                   About Membership
                 </p>
               </div>
@@ -142,7 +142,7 @@ function Header({ session }) {
             animate={isNavOpen ? {height: "auto", visibility: "visible"} : {height: 0, visibility: "hidden"}}
             className="sm:hidden px-4 text-center"
           >
-            <p className="p-3">Home</p>
+            <p className="p-3 cursor-pointer" onClick={() => router.push("/")}>Home</p>
             <p className="p-3 flex justify-center cursor-pointer max-h-12" onClick={() => setIsComponentVisible(!isComponentVisible)}>
               <p>Browse</p>
 
@@ -171,7 +171,7 @@ function Header({ session }) {
                 <p>Category 5</p>
               </motion.div>
             
-            <p className="p-3">About Membership</p>
+            <p className="p-3 cursor-pointer" onClick={() => router.push("/membership")}>About Membership</p>
           </motion.nav>
           
       </header>

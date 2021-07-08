@@ -6,13 +6,14 @@ import { getSession, signIn, signOut } from "next-auth/client";
 import Fade from "react-reveal/Fade";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useRouter } from 'next/router'
 
 function Header({ session }) {
   const { ref, isComponentVisible, setIsComponentVisible } =
     useComponentVisible(false);
 
   const [isNavOpen, setIsNavOpen] = useState(false)
-
+  const router = useRouter()
   const handleDropdown = () => {
     if (!isComponentVisible) {
       setIsComponentVisible(true);
@@ -53,7 +54,9 @@ function Header({ session }) {
             <Image
                 width={140}
                 height={54}
+                className="cursor-pointer"
                 objectFit="contain"
+                onClick={() => router.push('/')}
                 src="https://m.media-amazon.com/images/G/31/audibleweb/arya/navigation/audible_logo._CB490888215_.svg"
             />
             <div className="hidden sm:flex items-center flex-1">
@@ -112,7 +115,7 @@ function Header({ session }) {
                 </p>
               </div>
             </div>
-            <div className="flex ring-1 ring-gray-400 px-4 items-center py-2 mr-2 w-60 justify-between">
+            <div className="flex ring-1 ring-gray-400 px-4 items-center py-2 mx-5 w-60 justify-between">
               <input
                 className="focus:outline-none text-xs"
                 placeholder="Search for a great book"
@@ -142,8 +145,8 @@ function Header({ session }) {
             className="sm:hidden px-4 text-center"
           >
             <p className="p-3">Home</p>
-            <p className="p-3 flex justify-center cursor-pointer" onClick={() => setIsComponentVisible(!isComponentVisible)}>
-              Browse
+            <p className="p-3 flex justify-center cursor-pointer max-h-12" onClick={() => setIsComponentVisible(!isComponentVisible)}>
+              <p>Browse</p>
 
               {
                 isComponentVisible?
@@ -159,7 +162,7 @@ function Header({ session }) {
               }
             </p>
               <motion.div 
-                className={isComponentVisible && "pb-3"}
+                className={`${isComponentVisible && "pb-3"}`}
                 initial={{height: 0}} 
                 animate={isComponentVisible ? {height: "auto", visibility: "visible"} : {height: 0, visibility: "hidden"}}
               >

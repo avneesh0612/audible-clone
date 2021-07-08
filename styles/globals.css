@@ -14,15 +14,30 @@
     @apply cursor-pointer mr-3 border-b-2 border-transparent hover:border-gray-800;
   }
   .button {
-    @apply bg-gradient-to-b from-yellow-200 to-yellow-400 p-1 border border-yellow-300  focus:outline-none focus:ring-2 focus:ring-yellow-500 active:from-yellow-500 active:to-yellow-400 disabled:from-gray-200 disabled:to-gray-300 disabled:border-gray-400 rounded-xl   font-bold;
+    @apply transition duration-500 ease-in-out bg-[#FFA000] hover:bg-[#FFC849] py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-2  font-medium px-6 my-1 focus:outline-none;
   }
 }
 
-@layer base {
-  @font-face {
-    font-family: "Audible";
-    src: url("/fonts/audible.woff2") format("woff2");
-  }
+.carousel.carousel-slider {
+  width: 99.5vw !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 html {

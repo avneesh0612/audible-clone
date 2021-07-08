@@ -15,7 +15,7 @@ function Footer() {
                     <p>Redeem a Promotional Code</p>
                     <p>Whispersync for Voice</p>
                 </div>
-                <div className="mb-5">
+                <div className="mb-5 ">
                     <p>Best Sellets</p>
                     <p>New Releases</p>
                     <p>Foreign Language</p>

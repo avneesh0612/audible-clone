@@ -28,18 +28,18 @@ function Header({ session }) {
   return (
     <Fade top>
       <header className="sticky mt-2 font-poppins !z-20">
-        <header className="flex text-xs font-semibold px-3">
+        <header className="flex px-3 text-xs font-semibold">
           <div className="ml-auto">
             {session ? (
               <span
                 onClick={() => signOut()}
-                className="font-poppins focus:outline-none ml-3 border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100"
+                className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer font-poppins focus:outline-none hover:border-gray-800"
               >
                 Hi, {session.user.name}
               </span>
             ) : (
               <span
-                className="focus:outline-none ml-3 border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100"
+                className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer focus:outline-none hover:border-gray-800"
                 onClick={() => signIn()}
               >
                 Sign in
@@ -55,7 +55,7 @@ function Header({ session }) {
             Help
           </span>
         </header>
-        <header className="flex items-center px-5 justify-between mt-2 max-w-5xl mx-auto w-full">
+        <header className="flex items-center justify-between w-full max-w-5xl px-5 mx-auto mt-2">
           <Image
             width={140}
             height={54}
@@ -65,19 +65,19 @@ function Header({ session }) {
             src="https://m.media-amazon.com/images/G/31/audibleweb/arya/navigation/audible_logo._CB490888215_.svg"
             alt="logo"
           />
-          <div className="hidden sm:flex items-center flex-1">
-            <div className="flex justify-evenly items-center ml-4  mt-2 space-x-8">
-              <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
+          <div className="items-center flex-1 hidden sm:flex">
+            <div className="flex items-center mt-2 ml-4 space-x-8 justify-evenly">
+              <p className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer hover:border-gray-800">
                 Home
               </p>
               <div className="flex !z-50">
                 <button
-                  className="flex focus:outline-none items-end border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100"
+                  className="flex items-end duration-100 delay-100 border-b-2 border-transparent cursor-pointer focus:outline-none hover:border-gray-800"
                   ref={ref}
                   onClick={() => setIsComponentVisible(!isComponentVisible)}
                 >
                   Browse
-                  <ChevronDownIcon className="w-3 h-3 text-gray-700 ml-1 mb-1" />
+                  <ChevronDownIcon className="w-3 h-3 mb-1 ml-1 text-gray-700" />
                 </button>
                 {isComponentVisible && (
                   <motion.div
@@ -90,8 +90,8 @@ function Header({ session }) {
                         : { height: 0, visibility: "hidden" }
                     }
                   >
-                    <h1 className=" text-gray-700 ">Audiobook Categories</h1>
-                    <div className="flex flex-row">
+                    <h1 className="text-gray-700 ">Audiobook Categories</h1>
+                    <div className="flex">
                       <div>
                         <p className="dropdown_option">Fiction</p>
                         <p className="dropdown_option">Sci-Fi and Fantasy</p>
@@ -120,27 +120,27 @@ function Header({ session }) {
                   </motion.div>
                 )}
               </div>
-              <p className="border-b-2 border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
-                About Membership
+              <p className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer hover:border-gray-800">
+                <span className="hidden md:inline-block">About</span> Membership
               </p>
             </div>
           </div>
-          <div className="flex ring-1 ring-gray-400 px-4 items-center py-2 mx-5 w-60 justify-between">
+          <div className="flex items-center justify-between px-4 py-2 mx-5 ring-1 ring-gray-400 w-60">
             <input
-              className="focus:outline-none text-xs"
+              className="text-xs focus:outline-none"
               placeholder="Search for a great book"
             />
             <SearchIcon className="w-5 h-5 text-gray-500" />
           </div>
           {isNavOpen ? (
             <ChevronUpIcon
-              className="sm:hidden cursor-pointer"
+              className="cursor-pointer sm:hidden"
               width={20}
               onClick={() => setIsNavOpen(!isNavOpen)}
             />
           ) : (
             <ChevronDownIcon
-              className="sm:hidden cursor-pointer"
+              className="cursor-pointer sm:hidden"
               width={20}
               onClick={() => setIsNavOpen(!isNavOpen)}
             />
@@ -154,19 +154,19 @@ function Header({ session }) {
               ? { height: "auto", visibility: "visible" }
               : { height: 0, visibility: "hidden" }
           }
-          className="sm:hidden px-4 text-center"
+          className="px-4 text-center sm:hidden"
         >
           <p className="p-3">Home</p>
           <p
-            className="p-3 flex justify-center cursor-pointer max-h-12"
+            className="flex justify-center p-3 cursor-pointer max-h-12"
             onClick={() => setIsComponentVisible(!isComponentVisible)}
           >
             <p>Browse</p>
 
             {isComponentVisible ? (
-              <ChevronUpIcon className="sm:hidden pl-2" width={20} />
+              <ChevronUpIcon className="pl-2 sm:hidden" width={20} />
             ) : (
-              <ChevronDownIcon className="sm:hidden pl-2" width={20} />
+              <ChevronDownIcon className="pl-2 sm:hidden" width={20} />
             )}
           </p>
           <motion.div

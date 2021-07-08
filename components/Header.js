@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {useRouter} from 'next/router'
 import useComponentVisible from "../hooks/useComponentVisible";
 import { ChevronUpIcon, ChevronDownIcon, SearchIcon } from "@heroicons/react/outline";
 import { getSession, signIn, signOut } from "next-auth/client";
@@ -19,6 +20,7 @@ function Header({ session }) {
       setIsComponentVisible(false);
     }
   };
+  const router = useRouter()
 
   return (
     <Fade top>
@@ -43,7 +45,7 @@ function Header({ session }) {
               <span className="ml-3 font-normal">|</span>
             </div>
 
-            <span className="border-b-2 ml-3 md:mr-[270px] border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
+            <span onClick={() => router.push('help')}className="border-b-2 ml-3 md:mr-[270px] border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100">
               Help
             </span>
           </header>

@@ -24,7 +24,6 @@ function Header({ session }) {
       setIsComponentVisible(false);
     }
   };
-  const router = useRouter();
 
   return (
     <Fade top>

@@ -4,31 +4,50 @@
 @tailwind components;
 @tailwind utilities;
 
+.browse-hover {
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
 @layer components {
   .dropdown_option {
-    @apply cursor-pointer mr-3 border-b-2 border-transparent hover:border-gray-800;
+    @apply mr-3 border-b-2 border-transparent cursor-pointer hover:border-gray-800;
   }
   .button {
-    @apply transition duration-500 ease-in-out bg-[#FFA000] hover:bg-[#FFC849] py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-2  font-medium px-6 my-1 focus:outline-none;
-  }
-  body {
-    @apply font-poppins;
+    @apply px-6 py-2 my-1 mt-2 font-medium transition duration-500 ease-in-out transform rounded-md bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none;
   }
 }
 
 .carousel.carousel-slider {
-  width: 100vw !important;
-}
-
-body::-webkit-scrollbar {
-  display: none;
+  width: 99.5vw !important;
 }
 
 body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.orange-shadow:hover {
+  box-shadow: 0 10px 20px 0 rgb(255 160 0 / 29%);
+}
+
+.negative-z {
+  z-index: -1 !important;
 }

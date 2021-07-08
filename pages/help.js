@@ -83,14 +83,21 @@ function Help() {
         </div>
       </div>
       <div className="relative h-60 w-full mt-10">
-        <Image
-          layout="fill"
-          objectFit="contain"
-          className="w-5/6 mx-auto cursor-pointer"
-          alt="banner"
-          src="https://m.media-amazon.com/images/G/01/Audible/KM/Group_3.png"
-        />
-        <h3 className=" text-4xl  font-semibold">How to listen Guide</h3>
+        <div style={{ zIndex: "-1" }}>
+          <Image
+            layout="fill"
+            objectFit="contain"
+            className="w-5/6 mx-auto cursor-pointer negative-z"
+            alt="banner"
+            src="https://m.media-amazon.com/images/G/01/Audible/KM/Group_3.png"
+          />
+        </div>
+        <div className="z-50 font-semibold ml-[50%] h-full justify-center flex-col mt-16 items-center">
+          <h3 className="text-4xl">How to listen Guide</h3>
+          <p className="text-linkBlue mt-10">
+            Learn More <span className="text-yellow-600">{">"}</span>
+          </p>
+        </div>
       </div>
       <div className="flex bg-gradient-to-r from-gray-600  mt-10 p-10 w-full justify-center items-center to-gray-800">
         <h1 className="font-bold text-white mr-10 ">Need More Help?</h1>

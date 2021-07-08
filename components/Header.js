@@ -121,7 +121,13 @@ function Header({ session }) {
                 )}
               </div>
               <p className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer hover:border-gray-800">
-                <span className="hidden md:inline-block">About</span> Membership
+                <span
+                  className="hidden md:inline-block"
+                  onClick={() => router.push("/membership")}
+                >
+                  About
+                </span>{" "}
+                Membership
               </p>
             </div>
           </div>
@@ -185,7 +191,9 @@ function Header({ session }) {
             <p>Category 5</p>
           </motion.div>
 
-          <p className="p-3">About Membership</p>
+          <p className="p-3" onClick={() => router.push("/membership")}>
+            About Membership
+          </p>
         </motion.nav>
       </header>
     </Fade>

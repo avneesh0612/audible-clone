@@ -10,7 +10,7 @@ function InstructionItem({image, heading, description}) {
                 alt="alt-logo"
             />
             <h3 className="font-medium text-xl my-2">{heading}</h3>
-            <p className="text-sm text-gray-600">{description}</p>
+            <p className="text-sm text-gray-400">{description}</p>
         </div>
     )
 }

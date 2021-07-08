@@ -63,6 +63,7 @@ function Header({ session }) {
             objectFit="contain"
             onClick={() => router.push("/")}
             src="https://m.media-amazon.com/images/G/31/audibleweb/arya/navigation/audible_logo._CB490888215_.svg"
+            alt="logo"
           />
           <div className="hidden sm:flex items-center flex-1">
             <div className="flex justify-evenly items-center ml-4  mt-2 space-x-8">

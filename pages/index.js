@@ -57,7 +57,7 @@ export default function Home({ session }) {
   };
 
   return (
-    <motion.ul variants={container} initial="hidden" animate="visible">
+    <motion.div variants={container} initial="hidden" animate="visible">
       <div className="item">
         <Head>
           <title>Audible India | Free Audiobook with Trial | Audible.in</title>
@@ -107,6 +107,7 @@ export default function Home({ session }) {
                   width={2000}
                   height={400}
                   objectFit="contain"
+                  alt="books"
                 />
               </div>
             </div>
@@ -169,7 +170,7 @@ export default function Home({ session }) {
           </div>
         )}
       </div>
-    </motion.ul>
+    </motion.div>
   );
 }
 

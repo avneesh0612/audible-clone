@@ -38,13 +38,13 @@ export default function SignIn({ providers }) {
   };
 
   return (
-    <motion.ul
+    <motion.div
       className="container"
       variants={container}
       initial="hidden"
       animate="visible"
     >
-      <motion.li className="item" variants={item}>
+      <motion.div className="item" variants={item}>
         <div className="bg-white h-screen">
           <Head>
             <title>Audible Sign in</title>
@@ -64,6 +64,7 @@ export default function SignIn({ providers }) {
                     height={54}
                     objectFit="contain"
                     src="https://m.media-amazon.com/images/G/31/audibleweb/arya/navigation/audible_logo._CB490888215_.svg"
+                    alt="logo"
                   />
                   <div>
                     <div>
@@ -86,8 +87,8 @@ export default function SignIn({ providers }) {
             </>
           )}
         </div>
-      </motion.li>
-    </motion.ul>
+      </motion.div>
+    </motion.div>
   );
 }
 

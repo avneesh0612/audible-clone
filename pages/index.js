@@ -136,6 +136,7 @@ export default function Home({ session }) {
             </div>
 
             <div className="my-12 p-5">
+            <Fade left>
               <div
                 className="max-w-7xl mx-auto w-full py-14 min-h-[500px]"
                 style={{
@@ -144,6 +145,8 @@ export default function Home({ session }) {
                   backgroundSize: "cover",
                 }}
               >
+                
+                <Fade right>
                 <h1 className="text-3xl font-bold">Learn More</h1>
                 <div className="md:w-1/2">
                   <FeatureItem
@@ -162,8 +165,11 @@ export default function Home({ session }) {
                     title="Customisable Narration Speed"
                     description="Pick the pace that works for you. Vary the listening speed from 0.5x to 3x."
                   />
+                  
                 </div>
+                </Fade>
               </div>
+              </Fade>
             </div>
 
             <Footer />

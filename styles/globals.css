@@ -24,10 +24,6 @@
   width: 99.5vw !important;
 }
 
-body {
-  overflow-x: hidden !important;
-}
-
 ::-webkit-scrollbar {
   width: 0.8vw;
 }

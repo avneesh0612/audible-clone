@@ -109,7 +109,7 @@ function Help() {
           />
         </div>
         <div className="z-50 font-semibold ml-[50%] h-full justify-center flex-col mt-16 items-center">
-          <h3 className="text-4xl">How to listen Guide</h3>
+          <h3 className="text-4xl dark:text-gray-800">How to listen Guide</h3>
           <p className="mt-10 text-linkBlue">
             Learn More <span className="text-yellow-600">{">"}</span>
           </p>

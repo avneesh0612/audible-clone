@@ -35,13 +35,13 @@ function Header({ session }) {
             {session ? (
               <span
                 onClick={() => signOut()}
-                className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 font-poppins focus:outline-none hover:border-gray-800"
+                className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 font-poppins focus:outline-none hover:border-gray-800 dark:hover:border-gray-100"
               >
                 Hi, {session.user.name}
               </span>
             ) : (
               <span
-                className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 focus:outline-none hover:border-gray-800"
+                className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 focus:outline-none hover:border-gray-800 dark:hover:border-gray-100"
                 onClick={() => signIn()}
               >
                 Sign in
@@ -52,7 +52,7 @@ function Header({ session }) {
 
           <span
             onClick={() => router.push("help")}
-            className="border-b-2 dark:text-gray-100 ml-3 md:mr-[270px] border-transparent hover:border-gray-800 cursor-pointer delay-100 duration-100"
+            className="border-b-2 dark:text-gray-100 ml-3 md:mr-[270px] border-transparent hover:border-gray-800 dark:hover:border-gray-100 cursor-pointer delay-100 duration-100"
           >
             Help
           </span>
@@ -83,12 +83,12 @@ function Header({ session }) {
           </div>
           <div className="items-center flex-1 hidden sm:flex">
             <div className="flex items-center mt-2 ml-4 space-x-8 justify-evenly">
-              <p className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 hover:border-gray-800">
+              <p className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 hover:border-gray-800 dark:hover:border-gray-100">
                 Home
               </p>
               <div className="flex !z-50">
                 <button
-                  className="flex items-end duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 focus:outline-none hover:border-gray-800"
+                  className="flex items-end duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 focus:outline-none hover:border-gray-800 dark:hover:border-gray-100"
                   ref={ref}
                   onClick={() => setIsComponentVisible(!isComponentVisible)}
                 >
@@ -138,7 +138,7 @@ function Header({ session }) {
               </div>
               <p
                 onClick={() => router.push("/membership")}
-                className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 hover:border-gray-800"
+                className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 hover:border-gray-800 dark:hover:border-gray-100"
               >
                 <span className="hidden md:inline-block">About</span> Membership
               </p>

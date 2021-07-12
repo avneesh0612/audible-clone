@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 function Help() {
   return (
-    <div className="w-[82vw] flex  flex-col center items-center justify-center mx-auto dark:text-gray-100">
+    <div className="w-[82vw] flex  flex-col  items-center overflow-x-hidden justify-center mx-auto dark:text-gray-100">
       <Head>
         <title>Help Center | Audible</title>
         <link rel="icon" href="https://www.audible.in/favicon.ico" />

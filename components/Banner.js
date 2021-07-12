@@ -69,7 +69,7 @@ function Banner() {
                 <BannerCheck text="Listen offline, at no extra cost." />
               </div>
               <div className="w-80 ml-9">
-                <button className=" transition duration-500 ease-in-out bg-darkYellow hover:bg-lightYellow py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-2 w-full">
+                <button className="focus:outline-none outline-none transition duration-500 ease-in-out bg-darkYellow hover:bg-lightYellow py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-2 w-full">
                   Start your free trial now
                 </button>
                 <p className="text-white text-opacity-60 text-xs text-center">

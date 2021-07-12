@@ -71,12 +71,12 @@ export default function Home({ session }) {
             <Header session={session} />
             <Banner />
 
-            <div className="my-12 p-5 max-w-7xl w-full mx-auto">
+            <div className="w-full p-5 mx-auto my-12 max-w-7xl dark:text-gray-100">
               <div className="text-center">
                 <Fade top>
                   <h2 className="text-3xl font-medium">How It works</h2>
                 </Fade>
-                <div className="md:grid grid-cols-3 grid-flow-row-dense">
+                <div className="grid-flow-row-dense grid-cols-3 md:grid">
                   <Fade bottom>
                     <InstructionItem
                       heading="Join Audible"
@@ -103,7 +103,7 @@ export default function Home({ session }) {
 
               <div className="my-10">
                 <Image
-                  src="https://m.media-amazon.com/images/G/02/AudibleUK/en_GB/hero_images/UK-1738-Image-ribbon-update-940x250_V01._CB1198675309_.jpg"
+                  src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1626077724/image-removebg-preview_j28sdr.png"
                   width={2000}
                   height={400}
                   objectFit="contain"
@@ -112,8 +112,8 @@ export default function Home({ session }) {
               </div>
             </div>
 
-            <div className="bg-gray-200 my-12 p-5 w-full">
-              <div className="max-w-7xl mx-auto">
+            <div className="w-full p-5 my-12 bg-gray-200 dark:bg-gray-800">
+              <div className="mx-auto max-w-7xl">
                 <Fade left>
                   <FAQItem
                     question="What is Audible?"
@@ -135,40 +135,40 @@ export default function Home({ session }) {
               </div>
             </div>
 
-            <div className="my-12 p-5">
-            <Fade left>
-              <div
-                className="max-w-7xl mx-auto w-full py-14 min-h-[500px]"
-                style={{
-                  backgroundImage:
-                    "url(https://m.media-amazon.com/images/G/02/AudibleUK/en_GB/hero_images/UK-1727-Mythos-Landing_DT_App_2000x650_v01._CB1198675309_.jpg)",
-                  backgroundSize: "cover",
-                }}
-              >
-                
-                <Fade right>
-                <h1 className="text-3xl font-bold">Learn More</h1>
-                <div className="md:w-1/2">
-                  <FeatureItem
-                    title="Get one audiobook every month"
-                    description="Members get 1 credit a month, good for any title regardless of price. Choose from Audible Originals, best sellers, and more."
-                  />
-                  <FeatureItem
-                    title="Audible Original Podcasts"
-                    description="Members get free, unlimited listening to documentaries, comedies and more."
-                  />
-                  <FeatureItem
-                    title="Offline Access"
-                    description="Download your audiobooks to your app so you can listen without using data or Wi-Fi, at no extra cost."
-                  />
-                  <FeatureItem
-                    title="Customisable Narration Speed"
-                    description="Pick the pace that works for you. Vary the listening speed from 0.5x to 3x."
-                  />
-                  
+            <div className="p-5 my-12">
+              <Fade left>
+                <div
+                  className="max-w-7xl mx-auto w-full py-14 min-h-[500px]"
+                  style={{
+                    backgroundImage:
+                      "url(https://res.cloudinary.com/dssvrf9oz/image/upload/v1626078037/UK-1727-Mythos-Landing_DT_App_2000x650_v01._CB1198675309_-removebg-preview_1_m95c3f.png)",
+                    backgroundSize: "cover",
+                  }}
+                >
+                  <Fade right>
+                    <h1 className="text-3xl font-bold dark:text-gray-100">
+                      Learn More
+                    </h1>
+                    <div className="md:w-1/2">
+                      <FeatureItem
+                        title="Get one audiobook every month"
+                        description="Members get 1 credit a month, good for any title regardless of price. Choose from Audible Originals, best sellers, and more."
+                      />
+                      <FeatureItem
+                        title="Audible Original Podcasts"
+                        description="Members get free, unlimited listening to documentaries, comedies and more."
+                      />
+                      <FeatureItem
+                        title="Offline Access"
+                        description="Download your audiobooks to your app so you can listen without using data or Wi-Fi, at no extra cost."
+                      />
+                      <FeatureItem
+                        title="Customisable Narration Speed"
+                        description="Pick the pace that works for you. Vary the listening speed from 0.5x to 3x."
+                      />
+                    </div>
+                  </Fade>
                 </div>
-                </Fade>
-              </div>
               </Fade>
             </div>
 

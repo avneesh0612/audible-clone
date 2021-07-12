@@ -76,7 +76,7 @@ function Header({ session }) {
                 className="cursor-pointer"
                 objectFit="contain"
                 onClick={() => router.push("/")}
-                src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1626076008/286-2865228_audible-logo-white-hd-png-download-removebg-preview_j9pqzc.png"
+                src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1626081418/782-7825680_audible-logo-graphic-design-hd-png-download-removebg-preview_ljltcm.png"
                 alt="logo"
               />
             )}

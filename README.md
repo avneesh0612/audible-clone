@@ -42,9 +42,8 @@ and if you using npm run
 npm run dev
 ```
 
-You can use some accounts to test your features.
 
-
+## If you are devloping database or next auth feature
 ### Setting up next auth
 
 If you don't know about next auth follow this

@@ -18,6 +18,7 @@
     "react": "17.0.2",
     "react-awesome-loaders": "^0.1.37",
     "react-dom": "17.0.2",
+    "react-multi-carousel": "^2.6.3",
     "react-responsive-carousel": "^3.2.19",
     "react-reveal": "^1.2.2"
   },

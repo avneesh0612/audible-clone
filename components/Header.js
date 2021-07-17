@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import useComponentVisible from "../hooks/useComponentVisible";
+import useComponentVisible from "hooks/useComponentVisible";
 import {
   ChevronUpIcon,
   ChevronDownIcon,
@@ -10,8 +10,8 @@ import { signIn, signOut, useSession } from "next-auth/client";
 import Fade from "react-reveal/Fade";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import useDarkMode from "../hooks/useDarkMode";
-import requests from "../utils/requests";
+import useDarkMode from "hooks/useDarkMode";
+import requests from "utils/requests";
 
 function Header() {
   const { ref, isComponentVisible, setIsComponentVisible } =

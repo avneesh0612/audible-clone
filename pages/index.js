@@ -1,17 +1,16 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
+import Header from "components/Header";
+import Banner from "components/Banner";
 import { getSession } from "next-auth/client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Footer from "../components/Footer";
-import InstructionItem from "../components/InstructionItem";
+import Footer from "components/Footer";
+import InstructionItem from "components/InstructionItem";
 import Image from "next/image";
-import FAQItem from "../components/FAQItem";
-import Loader from "../components/Loader";
+import FAQItem from "components/FAQItem";
+import Loader from "components/Loader";
 import Fade from "react-reveal/Fade";
-import FeatureItem from "../components/FeatureItem";
-import requests from "../utils/requests";
+import FeatureItem from "components/FeatureItem";
 
 export default function Home({ session }) {
   const [loading, setLoading] = useState(false);

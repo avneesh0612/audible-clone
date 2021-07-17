@@ -1,7 +1,7 @@
-import Header from "../components/Header";
+import Header from "components/Header";
 import Head from "next/head";
 import Image from "next/image";
-import HelpTrending from "../components/HelpTrending";
+import HelpTrending from "components/HelpTrending";
 import Fade from "react-reveal/Fade";
 
 function Help() {

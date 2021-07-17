@@ -12,8 +12,11 @@ import FAQItem from "../components/FAQItem";
 import Loader from "../components/Loader";
 import Fade from "react-reveal/Fade";
 import FeatureItem from "../components/FeatureItem";
+import requests from "../utils/requests";
+import Results from '../components/Results'
 
-export default function Home({ session }) {
+export default function Home({ session, request, props, results }) {
+  console.log(requests)
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -171,6 +174,7 @@ export default function Home({ session }) {
                 </div>
               </Fade>
             </div>
+            <Results results={results} />
 
             <Footer />
           </div>
@@ -182,10 +186,20 @@ export default function Home({ session }) {
 
 export const getServerSideProps = async (context) => {
   const session = await getSession(context);
+  const genre = context.query.genre
+
+ const request = await fetch(
+      `https://www.googleapis.com/books/v1/volumes?q=${
+        requests.fetchBiographies.title}&printType=books&key=${process.env.BOOK_API_KEY
+        }`
+      ).then((res) => res.json());
 
   return {
     props: {
       session,
+      request,
+      results: request.results
     },
   };
 };
+

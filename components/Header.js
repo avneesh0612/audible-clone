@@ -39,7 +39,7 @@ function Header() {
                 onClick={() => signOut()}
                 className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 font-poppins focus:outline-none hover:border-gray-800 dark:hover:border-gray-100"
               >
-                Hi, {session.user.name}
+                Hi, {session?.user.name}
               </span>
             ) : (
               <span

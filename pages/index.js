@@ -2,7 +2,6 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import { getSession } from "next-auth/client";
-import db from "../firebase";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
@@ -23,19 +22,6 @@ export default function Home({ session }) {
       setLoading(false);
     }, 2000);
   }, []);
-
-  useEffect(() => {
-    if (session?.user) {
-      db.collection("users").doc(session?.user.email).set(
-        {
-          email: session?.user.email,
-          name: session?.user.name,
-          photoURL: session?.user.image,
-        },
-        { merge: true }
-      );
-    }
-  }, [session?.user]);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },

@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import InstructionItem from "../components/InstructionItem";
-import FeatureItem from "../components/FeatureItem";
+import Header from "components/Header";
+import Footer from "components/Footer";
+import InstructionItem from "components/InstructionItem";
+import FeatureItem from "components/FeatureItem";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 

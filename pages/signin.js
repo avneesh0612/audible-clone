@@ -2,10 +2,10 @@ import React from "react";
 import { providers, signIn, getSession, csrfToken } from "next-auth/client";
 import Image from "next/image";
 import Head from "next/head";
-import Header from "../components/Header";
+import Header from "components/Header";
 import { motion } from "framer-motion";
 import Pulse from "react-reveal/Pulse";
-import useDarkMode from "../hooks/useDarkMode";
+import useDarkMode from "hooks/useDarkMode";
 
 export default function SignIn({ providers }) {
   const [colorTheme] = useDarkMode();

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Header from "../../components/Header";
-import requests from "../../utils/requests";
+import Header from "components/Header";
+import requests from "utils/requests";
 import Head from "next/head";
 
 function index({ books, volume }) {
@@ -16,7 +16,7 @@ function index({ books, volume }) {
         <p className="text-gray-600">{books.items.length} items</p>
       </div>
       <div className="flex space-x-5 mt-16 w-4/6 overflow-scroll  hidescroll">
-        {books.items.map((book) => (
+        {books.items.map(book => (
           <div key={book.id} className="bg-gray-100 shadow-xl">
             {/* <h1>{book.volumeInfo.title}</h1>
             <h1>{book.volumeInfo.authors}</h1> */}
@@ -43,7 +43,7 @@ export async function getServerSideProps(context) {
     requests[volume]?.url || requests.fetchTrending.url
   }`;
 
-  const request = await fetch(URL).then((res) => res.json());
+  const request = await fetch(URL).then(res => res.json());
 
   return {
     props: {

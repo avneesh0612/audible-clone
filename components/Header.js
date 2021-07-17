@@ -116,7 +116,7 @@ function Header() {
                           .map(([key, { title }]) => (
                             <h2
                               key={key}
-                              className="mr-3 text-black border-b-2 border-transparent cursor-pointer hover:border-gray-800"
+                              className="mr-3 text-black cursor-pointer hover:underline"
                               onClick={() =>
                                 router.push(`/books/?volume=${key}`)
                               }
@@ -131,7 +131,7 @@ function Header() {
                           .map(([key, { title }]) => (
                             <h2
                               key={key}
-                              className="mr-3 text-black border-b-2 border-transparent cursor-pointer hover:border-gray-800"
+                              className="mr-3 text-black  cursor-pointer hover:underline"
                               onClick={() =>
                                 router.push(`/books/?volume=${key}`)
                               }

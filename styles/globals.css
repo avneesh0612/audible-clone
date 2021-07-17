@@ -9,9 +9,6 @@
 }
 
 @layer components {
-  .dropdown_option {
-    @apply mr-3 border-b-2 border-transparent cursor-pointer hover:border-gray-800;
-  }
   .button {
     @apply px-6 py-2 my-1 mt-2 font-medium transition duration-500 ease-in-out transform rounded-md bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none;
   }
@@ -56,4 +53,15 @@ html {
 
 .negative-z {
   z-index: -1 !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hidescroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hidescroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

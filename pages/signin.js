@@ -91,14 +91,10 @@ export default function SignIn({ providers }) {
 }
 
 export async function getServerSideProps(context) {
-  const { req, res } = context;
+  const { req } = context;
   const session = await getSession({ req });
 
   if (session) {
-    res.writeHead(302, {
-      Location: "/",
-    });
-    res.end();
     return {
       redirect: { destination: "/" },
     };

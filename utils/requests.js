@@ -1,50 +1,46 @@
 export default {
-    fetchFiction: {
-        title: "Fiction",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=fiction&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchScifi: {
-        title: "Sci-Fi",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=sci-fi&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchMysteries: {
-        title: "Mysteries",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=mysteries&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchRomance: {
-        title: "Romance",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=romaces&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchTeen: {
-        title: "Teen and Young Adult",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=teen&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchReligion: {
-        title: "Religion and Spirituality",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=religionandspirituality&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchSelfDev: {
-        title: "Self Development",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=selfdevelopment&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchBiographies: {
-        title: "Biographies and Memoirs",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=biographiesandmemoirs&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchChildren: {
-        title: "Children Audiobooks",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=children&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchPolitics: {
-        title: "Politics and Social Studies",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=politics&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchHistory: {
-        title: "History",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=history&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    },
-    fetchPolitics: {
-        title: "Business and Money",
-        url: ' https://www.googleapis.com/books/v1/volumes?q=businessandmoney&maxResults=24&printType=books&key=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg'
-    }
-}
+  fetchFiction: {
+    title: "Fiction",
+    url: `/volumes?q=fiction&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchScifi: {
+    title: "Sci-Fi",
+    url: `/volumes?q=sci-fi&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchMysteries: {
+    title: "Mysteries",
+    url: `/volumes?q=mysteries&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchRomance: {
+    title: "Romance",
+    url: `/volumes?q=romaces&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchTeen: {
+    title: "Teen and Young Adult",
+    url: `/volumes?q=teen&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchReligion: {
+    title: "Religion and Spirituality",
+    url: `/volumes?q=religionandspirituality&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchSelfDev: {
+    title: "Self Development",
+    url: `/volumes?q=selfdevelopment&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchBiographies: {
+    title: "Biographies and Memoirs",
+    url: `/volumes?q=biographies&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchChildren: {
+    title: "Children Audiobooks",
+    url: `/volumes?q=children&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchHistory: {
+    title: "History",
+    url: `/volumes?q=history&key=${process.env.BOOK_API_KEY}`,
+  },
+  fetchBuisiness: {
+    title: "Business and Money",
+    url: `/volumes?q=business&key=${process.env.BOOK_API_KEY}`,
+  },
+};

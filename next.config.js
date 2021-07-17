@@ -8,7 +8,12 @@ module.exports = withPWA({
   },
 
   images: {
-    domains: ["res.cloudinary.com", "m.media-amazon.com", "help.audible.in"],
+    domains: [
+      "res.cloudinary.com",
+      "m.media-amazon.com",
+      "help.audible.in",
+      "books.google.com",
+    ],
   },
 
   env: {

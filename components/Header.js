@@ -6,16 +6,18 @@ import {
   ChevronDownIcon,
   SearchIcon,
 } from "@heroicons/react/outline";
-import { getSession, signIn, signOut } from "next-auth/client";
+import { signIn, signOut, useSession } from "next-auth/client";
 import Fade from "react-reveal/Fade";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import useDarkMode from "../hooks/useDarkMode";
+import requests from "../utils/requests";
 
-function Header({ session }) {
+function Header() {
   const { ref, isComponentVisible, setIsComponentVisible } =
     useComponentVisible(false);
   const [colorTheme, setTheme] = useDarkMode();
+  const [session] = useSession();
 
   const [isNavOpen, setIsNavOpen] = useState(false);
   const router = useRouter();
@@ -98,7 +100,7 @@ function Header({ session }) {
                 {isComponentVisible && (
                   <motion.div
                     ref={ref}
-                    className="absolute top-20 p-3 border-2 border-gray-400 rounded-md !z-50 bg-white"
+                    className="absolute top-20 p-3 border-2 border-gray-400 rounded-md !z-50 bg-white flex-wrap"
                     initial={{ height: 0, visibility: "hidden" }}
                     animate={
                       isComponentVisible
@@ -106,31 +108,37 @@ function Header({ session }) {
                         : { height: 0, visibility: "hidden" }
                     }
                   >
-                    <h1 className="text-gray-700 ">Audiobook Categories</h1>
+                    <h1 className="text-gray-700">Audiobook Categories</h1>
                     <div className="flex">
                       <div>
-                        <p className="dropdown_option">Fiction</p>
-                        <p className="dropdown_option">Sci-Fi and Fantasy</p>
-                        <p className="dropdown_option">
-                          Mysteries and Thrillers
-                        </p>
-                        <p className="dropdown_option">Romance</p>
-                        <p className="dropdown_option">Teen and Young Adult</p>
-                        <p className="dropdown_option">
-                          Religion and Spirituality
-                        </p>
+                        {Object.entries(requests)
+                          .slice(0, 6)
+                          .map(([key, { title }]) => (
+                            <h2
+                              key={key}
+                              className="mr-3 text-black border-b-2 border-transparent cursor-pointer hover:border-gray-800"
+                              onClick={() =>
+                                router.push(`/books/?volume=${key}`)
+                              }
+                            >
+                              {title}
+                            </h2>
+                          ))}
                       </div>
                       <div>
-                        <p className="dropdown_option">Self-Development</p>
-                        <p className="dropdown_option">Biographies & Memoirs</p>
-                        <p className="dropdown_option">
-                          Mysteries and Thrillers
-                        </p>
-                        <p className="dropdown_option">Romance</p>
-                        <p className="dropdown_option">Teen and Young Adult</p>
-                        <p className="dropdown_option">
-                          Religion and Spirituality
-                        </p>
+                        {Object.entries(requests)
+                          .slice(6, 12)
+                          .map(([key, { title }]) => (
+                            <h2
+                              key={key}
+                              className="mr-3 text-black border-b-2 border-transparent cursor-pointer hover:border-gray-800"
+                              onClick={() =>
+                                router.push(`/books/?volume=${key}`)
+                              }
+                            >
+                              {title}
+                            </h2>
+                          ))}
                       </div>
                     </div>
                   </motion.div>

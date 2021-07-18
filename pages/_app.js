@@ -1,7 +1,14 @@
 import "../styles/globals.css";
-import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-react";
+import { ClerkProvider } from "@clerk/clerk-react";
 import { useRouter } from "next/router";
+import "styles/nprogress.css";
 import Head from "next/head";
+import nProgress from "nprogress";
+import Router from "next/router";
+
+Router.events.on("routeChangeWStart", nProgress.start);
+Router.events.on("routeChangeComplete", nProgress.done);
+Router.events.on("routeChangeError", nProgress.done);
 
 const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
 

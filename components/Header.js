@@ -26,26 +26,25 @@ function Header() {
     <Fade top>
       <header className="sticky mt-2 font-poppins !z-20">
         <header className="flex px-3 text-xs font-semibold items-center justify-center">
-          <div className="ml-auto flex items-center justify-center dark:text-gray-100">
+          <span
+            onClick={() => router.push("help")}
+            className="border-b-2 ml-auto dark:text-gray-100  border-transparent hover:border-gray-800 dark:hover:border-gray-100 cursor-pointer delay-100 duration-100"
+          >
+            Help
+          </span>
+          <span className="ml-3 font-normal dark:text-gray-100">|</span>
+          <div className="ml-3 md:mr-[270px] flex items-center justify-center dark:text-gray-100">
             <SignedOut>
               <Link href="/sign-in">
                 <span className="cursor-pointer ml-3 font-normal dark:text-gray-100">
                   Sign in
                 </span>
               </Link>
-              <span className="ml-3 font-normal dark:text-gray-100">|</span>
             </SignedOut>
             <SignedIn>
               <UserButton />
             </SignedIn>
           </div>
-
-          <span
-            onClick={() => router.push("help")}
-            className="border-b-2 dark:text-gray-100 ml-3 md:mr-[270px] border-transparent hover:border-gray-800 dark:hover:border-gray-100 cursor-pointer delay-100 duration-100"
-          >
-            Help
-          </span>
         </header>
         <header className="flex items-center justify-between w-full max-w-5xl px-5 mx-auto mt-2">
           <div className="hidden md:inline-flex">

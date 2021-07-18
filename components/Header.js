@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import useComponentVisible from "hooks/useComponentVisible";
 import {
@@ -6,50 +7,33 @@ import {
   ChevronDownIcon,
   SearchIcon,
 } from "@heroicons/react/outline";
-import { signIn, signOut, useSession } from "next-auth/client";
 import Fade from "react-reveal/Fade";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import useDarkMode from "hooks/useDarkMode";
 import requests from "utils/requests";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
 function Header() {
   const { ref, isComponentVisible, setIsComponentVisible } =
     useComponentVisible(false);
   const [colorTheme, setTheme] = useDarkMode();
-  const [session] = useSession();
 
   const [isNavOpen, setIsNavOpen] = useState(false);
   const router = useRouter();
-  const handleDropdown = () => {
-    if (!isComponentVisible) {
-      setIsComponentVisible(true);
-    } else {
-      setIsComponentVisible(false);
-    }
-  };
 
   return (
     <Fade top>
       <header className="sticky mt-2 font-poppins !z-20">
-        <header className="flex px-3 text-xs font-semibold">
-          <div className="ml-auto">
-            {session ? (
-              <span
-                onClick={() => signOut()}
-                className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 font-poppins focus:outline-none hover:border-gray-800 dark:hover:border-gray-100"
-              >
-                Hi, {session?.user.name}
-              </span>
-            ) : (
-              <span
-                className="ml-3 duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 focus:outline-none hover:border-gray-800 dark:hover:border-gray-100"
-                onClick={() => signIn()}
-              >
-                Sign in
-              </span>
-            )}
-            <span className="ml-3 font-normal dark:text-gray-100">|</span>
+        <header className="flex px-3 text-xs font-semibold items-center justify-center">
+          <div className="ml-auto flex items-center justify-center">
+            <SignedOut>
+              <Link href="/sign-in">Sign in</Link>
+              <span className="ml-3 font-normal dark:text-gray-100">|</span>
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
           </div>
 
           <span

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Header from "components/Header";
 import Banner from "components/Banner";
-import { getSession } from "next-auth/client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Footer from "components/Footer";
@@ -12,7 +11,7 @@ import Loader from "components/Loader";
 import Fade from "react-reveal/Fade";
 import FeatureItem from "components/FeatureItem";
 
-export default function Home({ session }) {
+export default function Home() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -165,13 +164,3 @@ export default function Home({ session }) {
     </motion.div>
   );
 }
-
-export const getServerSideProps = async (context) => {
-  const session = await getSession(context);
-
-  return {
-    props: {
-      session,
-    },
-  };
-};

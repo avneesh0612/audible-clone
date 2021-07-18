@@ -8,11 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^1.14.0",
     "@heroicons/react": "^1.0.1",
     "aos": "^2.3.4",
     "framer-motion": "^4.1.17",
     "next": "10.2.0",
-    "next-auth": "^3.27.1",
     "next-pwa": "^5.2.23",
     "nprogress": "^0.2.0",
     "react": "17.0.2",

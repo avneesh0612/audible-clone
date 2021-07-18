@@ -26,9 +26,13 @@ function Header() {
     <Fade top>
       <header className="sticky mt-2 font-poppins !z-20">
         <header className="flex px-3 text-xs font-semibold items-center justify-center">
-          <div className="ml-auto flex items-center justify-center">
+          <div className="ml-auto flex items-center justify-center dark:text-gray-100">
             <SignedOut>
-              <Link href="/sign-in">Sign in</Link>
+              <Link href="/sign-in">
+                <span className="cursor-pointer ml-3 font-normal dark:text-gray-100">
+                  Sign in
+                </span>
+              </Link>
               <span className="ml-3 font-normal dark:text-gray-100">|</span>
             </SignedOut>
             <SignedIn>

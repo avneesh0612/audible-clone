@@ -1,26 +1,21 @@
-import "styles/globals.css";
-import "styles/nprogress.css";
-import nProgress from "nprogress";
-import Router, { useRouter } from "next/router";
+import "../styles/globals.css";
 import {
   ClerkProvider,
   RedirectToSignIn,
   SignedIn,
   SignedOut,
 } from "@clerk/clerk-react";
+import { useRouter } from "next/router";
 
-// Progress bar
-Router.events.on("routeChangeStart", nProgress.start);
-Router.events.on("routeChangeComplete", nProgress.done);
-Router.events.on("routeChangeError", nProgress.done);
-const publicPages = ["/", "/sign-in/[[...index]]", "/sign-up/[[...index]]"];
+const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
+
+const publicPages = ["/sign-in/[[...index]]", "/sign-up/[[...index]]"];
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-
   return (
     <ClerkProvider
-      frontendApi={process.env.NEXT_PUBLIC_CLERK_FRONTEND_API}
+      frontendApi={clerkFrontendApi}
       navigate={(to) => router.push(to)}
     >
       {publicPages.includes(router.pathname) ? (

@@ -63,22 +63,22 @@ function Help() {
         <h2 className="w-20 mt-10 ml-10 text-lg font-medium text-center border-b-2 border-yellow-400 font-poppins">
           Popular
         </h2>
-        <div className="flex w-full h-60">
+        <div className="flex w-full">
           <Fade left>
             <div className="bg-gray-100 shadow-lg p-8 w-[65%] justify-center">
-              <p className="text-lg cursor-pointer text-linkBlue active:ring-yellow-300 active:ring-2 ">
+              <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2 ">
                 How can I cancel my membership?
               </p>
-              <p className="text-lg cursor-pointer text-linkBlue active:ring-yellow-300 active:ring-2">
+              <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
                 Why have I not been charged for my monthly subscription?
               </p>
-              <p className="text-lg cursor-pointer text-linkBlue active:ring-yellow-300 active:ring-2">
+              <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
                 Will your audiobooks disappear after I cancel?
               </p>
-              <p className="text-lg cursor-pointer text-linkBlue active:ring-yellow-300 active:ring-2">
+              <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
                 What happens to my credits if I cancel?
               </p>
-              <p className="text-lg cursor-pointer text-linkBlue active:ring-yellow-300 active:ring-2">
+              <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
                 How can I return an audiobooks?
               </p>
             </div>

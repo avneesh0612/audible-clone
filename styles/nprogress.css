@@ -4,7 +4,7 @@
 }
 
 #nprogress .bar {
-  background: #FFA000;
+  background: #ffa000;
 
   position: fixed;
   z-index: 1031;
@@ -12,7 +12,7 @@
   left: 0;
 
   width: 100%;
-  height: 2px;
+  height: 4px;
 }
 
 /* Fancy blur effect */
@@ -22,7 +22,7 @@
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #FFA000, 0 0 5px #FFA000;
+  box-shadow: 0 0 10px #ffa000, 0 0 5px #ffa000;
   opacity: 1;
 
   -webkit-transform: rotate(3deg) translate(0px, -4px);
@@ -30,7 +30,6 @@
   transform: rotate(3deg) translate(0px, -4px);
 }
 
-/* Remove these to get rid of the spinner */
 #nprogress .spinner {
   display: block;
   position: fixed;
@@ -45,8 +44,8 @@
   box-sizing: border-box;
 
   border: solid 2px transparent;
-  border-top-color: #FFA000;
-  border-left-color: #FFA000;
+  border-top-color: #ffa000;
+  border-left-color: #ffa000;
   border-radius: 50%;
 
   -webkit-animation: nprogress-spinner 400ms linear infinite;
@@ -82,13 +81,13 @@
 
 @media (prefers-color-scheme: dark) {
   #nprogress .spinner-icon {
-    border-top-color: #FFC849;
-    border-left-color: #FFC849;
+    border-top-color: #ffc849;
+    border-left-color: #ffc849;
   }
   #nprogress .peg {
-    box-shadow: 0 0 10px #FFC849, 0 0 5px #FFC849;
+    box-shadow: 0 0 10px #ffc849, 0 0 5px #ffc849;
   }
   #nprogress .bar {
-    background: #FFC849;
+    background: #ffc849;
   }
 }

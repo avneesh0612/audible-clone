@@ -31,24 +31,28 @@ function Help() {
           <HelpTrending
             image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1625734595/AccountSupport_20201111_rufgbt.png"
             text="Troubleshooting"
+            url="Troubleshooting"
           />
         </Fade>
         <Fade left>
           <HelpTrending
             image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1625734595/Cancel_20201111_hewgnr.png"
             text="Cancel"
+            url="Cancel"
           />
         </Fade>
         <Fade right>
           <HelpTrending
             image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1625734595/Library_2020111_td8qjk.png"
             text="Library"
+            url="Library"
           />
         </Fade>
         <Fade right>
           <HelpTrending
             image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1625734595/Credits_Solar_20201109_majd85.png"
             text="Credits"
+            url="Credits"
           />
         </Fade>
       </div>

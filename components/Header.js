@@ -41,7 +41,7 @@ function Header() {
           </div>
 
           <span
-            onClick={() => router.push("help")}
+            onClick={() => router.push("/help")}
             className="border-b-2 dark:text-gray-100 ml-3 md:mr-[270px] border-transparent hover:border-gray-800 dark:hover:border-gray-100 cursor-pointer delay-100 duration-100"
           >
             Help

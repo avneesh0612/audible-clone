@@ -42,41 +42,16 @@ and if you using npm run
 npm run dev
 ```
 
+## Creating a PR
 
-## If you are devloping database or next auth feature
-### Setting up next auth
+Checkout [this](https://medium.com/weekly-webtips/how-to-contribute-to-an-open-source-project-and-make-a-pr-cc92f6c9831d) article to make a PR
 
-If you don't know about next auth follow this
-[tutorial](https://medium.com/geekculture/why-and-how-to-get-started-with-next-auth-61740558b45b "Next auth crash course")
-tutorial and get your credentials.
-And your .env.local file will look like this
+## Configuring Clerk
 
-```bash
-GOOGLE_CLIENT_ID=client_id
-GOOGLE_CLIENT_SECRET=client_secret
-NEXTAUTH_URL=http://localhost:3000/
-```
-## Submitting the new features.
-### Pushing the code to Github
-
-```bash
-git add .
-git commit -m "commit message (what you added)"
-git push origin new-feature
-```
-
-In github if you refresh the page.
-
-- You can see a button Compare and Pull request.
-- Click on that button.
-
-Now just add a title and description and create a pull request.
-
-You have successfully created a pull request and I will review and merge it soon.
-
+Checkout [this](https://medium.com/geekculture/mastering-clerk-authentication-with-the-next-js-standard-setup-c66b97bac724) article to configure Clerk
 
 ### Contributors:
 
 [
-    ![Contributors](https://contrib.rocks/image?repo=avneesh0612/audible)
+![Contributors](https://contrib.rocks/image?repo=avneesh0612/audible)
 ](https://github.com/avneesh0612/audible/graphs/contributors)

@@ -224,7 +224,7 @@ function audiblesuno() {
                 <Image
                   src="https://m.media-amazon.com/images/I/61a7sMc1P3L._SL320_.jpg"
                   width={319}
-                  height={319}
+                  height={315}
                   alt="alt-img"
                 />
               </div>

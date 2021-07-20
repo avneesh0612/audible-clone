@@ -42,7 +42,7 @@ function audiblesuno() {
               <Fade bottom>
                 <InstructionItem
                   heading="Completely free"
-                  description="No payment, no sign-up.It's absolutely free."
+                  description="No payment, no sign-up. It's absolutely free."
                   image="https://m.media-amazon.com/images/G/35/AudibleAU/en_AU/CRO/AU_Member_2.0_onsite_icons_hoursv3._CB1198675309_.svg"
                 />
               </Fade>
@@ -124,7 +124,7 @@ function audiblesuno() {
             <Fade left>
               <div className="p-7">
                 <Image
-                  src="https://m.media-amazon.com/images/G/31/AudibleIN/2019/audibleweb/November/adbl_IN_suno_LP_author4._CB1198675309_.jpg"
+                  src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1626767039/adbl_IN_suno_LP_author4._CB1198675309_-removebg-preview_pux3qx.png"
                   width={232}
                   height={279}
                   alt="alt-img"
@@ -137,7 +137,7 @@ function audiblesuno() {
             <Fade left>
               <div className="p-7">
                 <Image
-                  src="https://m.media-amazon.com/images/G/31/AudibleIN/2019/audibleweb/November/adbl_IN_suno_LP_author3._CB446759516_.jpg"
+                  src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1626767039/image-removebg-preview_u8msnd.png"
                   width={232}
                   height={279}
                   alt="alt-img"
@@ -150,7 +150,7 @@ function audiblesuno() {
             <Fade right>
               <div className="p-7">
                 <Image
-                  src="https://m.media-amazon.com/images/G/31/AudibleIN/2019/audibleweb/November/adbl_IN_suno_LP_author1_updated._CB1198675309_.jpg"
+                  src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1626767079/image-removebg-preview_1_x2bzcg.png"
                   width={232}
                   height={279}
                   alt="alt-img"
@@ -163,7 +163,7 @@ function audiblesuno() {
             <Fade right>
               <div className="p-7">
                 <Image
-                  src="https://m.media-amazon.com/images/G/31/AudibleIN/2019/audibleweb/November/adbl_IN_suno_LP_author2_updated._CB1198675309_.jpg"
+                  src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1626767078/image-removebg-preview_2_o8wi2c.png"
                   width={232}
                   height={279}
                   alt="alt-img"

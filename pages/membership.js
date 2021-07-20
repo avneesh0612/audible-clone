@@ -38,21 +38,21 @@ function AboutMembership() {
           <div className="max-w-screen-xl grid-flow-row-dense grid-cols-3 py-10 mx-auto md:grid">
             <Fade bottom>
               <InstructionItem
-                title="Engaging stories"
+                heading="Engaging stories"
                 description="Get one audiobook every month and savings on additional purchases. Choose from celebrity performances, Audible original content, and more."
                 image="https://m.media-amazon.com/images/G/31//AudibleIN/2018/audibleweb/October/membership_page_stories_icon_blue._CB1198675309_.svg"
               />
             </Fade>
             <Fade bottom>
               <InstructionItem
-                title="Exceptional service"
+                heading="Exceptional service"
                 description="With Audible, satisfaction is guaranteed. Build your audiobook collection, keep up to six unused credits and more."
                 image="https://m.media-amazon.com/images/G/31//AudibleIN/2018/audibleweb/October/membership_page_services_icon_blue._CB1198675309_.svg"
               />
             </Fade>
             <Fade bottom>
               <InstructionItem
-                title="One powerful app"
+                heading="One powerful app"
                 description="Listen on the go, switch devices without losing your place, and adjust your listening speed with our top-rated app."
                 image="https://m.media-amazon.com/images/G/31//AudibleIN/2018/audibleweb/October/membership_page_devices_icon_blue._CB1198675309_.svg"
               />

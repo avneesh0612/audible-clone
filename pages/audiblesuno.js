@@ -5,7 +5,6 @@ import Image from "next/image";
 import InstructionItem from "components/InstructionItem";
 import Fade from "react-reveal/Fade";
 import { useRouter } from "next/router";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function audiblesuno() {
   const router = useRouter();

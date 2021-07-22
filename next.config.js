@@ -13,6 +13,7 @@ module.exports = withPWA({
       "m.media-amazon.com",
       "help.audible.in",
       "books.google.com",
+      "expertdesign.cc",
     ],
   },
 });

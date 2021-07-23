@@ -65,7 +65,7 @@ function Header() {
                 className="cursor-pointer"
                 objectFit="contain"
                 onClick={() => router.push("/")}
-                src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1626081418/782-7825680_audible-logo-graphic-design-hd-png-download-removebg-preview_ljltcm.png"
+                src="https://expertdesign.cc/papa-react-images/audible-logo-dark.svg"
                 alt="logo"
               />
             )}
@@ -138,8 +138,9 @@ function Header() {
                 <span className="hidden md:inline-block">About</span> Membership
               </p>
               <p
-              onClick={() => router.push("/audiblesuno")} 
-              className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 hover:border-gray-800 dark:hover:border-gray-100">
+                onClick={() => router.push("/audiblesuno")}
+                className="duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 hover:border-gray-800 dark:hover:border-gray-100"
+              >
                 Audible Suno
               </p>
             </div>

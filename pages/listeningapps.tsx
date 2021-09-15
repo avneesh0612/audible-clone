@@ -196,9 +196,9 @@ const listeningapps = () => {
           </Fade>
           <Fade left>
             <div className="mt-6 mb-20 text-center">
-              <a className="mt-2 text-sm font-medium text-center text-blue-800 cursor-pointer">
+              <p className="mt-2 text-sm font-medium text-center text-blue-800 cursor-pointer">
                 Contact us
-              </a>
+              </p>
             </div>
           </Fade>
         </div>

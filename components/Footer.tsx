@@ -3,81 +3,49 @@ const Footer: React.FC = () => {
     <div className="w-full p-10 bg-gray-100 dark:bg-gray-800 dark:text-gray-100">
       <div className="grid w-3/4 grid-flow-row-dense mx-auto leading-loose max-w-7xl sm:grid-cols-4">
         <div className="mb-5">
-          <a className="cursor-pointer hover:underline">
-            <p>Contact Us</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Help</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Business Enquiries</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Affiliates</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Mobile Site</p>
-          </a>
+          <p className="cursor-pointer hover:underline">Contact Us</p>
+          <p className="cursor-pointer hover:underline">Help</p>
+          <p className="cursor-pointer hover:underline">Business Enquiries</p>
+          <p className="cursor-pointer hover:underline">Affiliates</p>
+          <p className="cursor-pointer hover:underline">Mobile Site</p>
         </div>
         <div className="mb-5">
-          <a className="cursor-pointer hover:underline">
-            <p>Audible Mobile Apps</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Gift Centre</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Redeem a Promotional Code</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Whispersync for Voice</p>
-          </a>
+          <p className="cursor-pointer hover:underline">Audible Mobile Apps</p>
+          <p className="cursor-pointer hover:underline">Gift Centre</p>
+          <p className="cursor-pointer hover:underline">
+            Redeem a Promotional Code
+          </p>
+          <p className="cursor-pointer hover:underline">
+            Whispersync for Voice
+          </p>
         </div>
         <div className="mb-5 ">
-          <a className="cursor-pointer hover:underline">
-            <p>Best Sellets</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>New Releases</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Foreign Language</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Mystery, Thriller & Suspense</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Science Ficiton & Fantasy</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Road Tripe Listens</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Summer Listens</p>
-          </a>
+          <p className="cursor-pointer hover:underline">Best Sellets</p>
+          <p className="cursor-pointer hover:underline">New Releases</p>
+          <p className="cursor-pointer hover:underline">Foreign Language</p>
+          <p className="cursor-pointer hover:underline">
+            Mystery, Thriller & Suspense
+          </p>
+          <p className="cursor-pointer hover:underline">
+            Science Ficiton & Fantasy
+          </p>
+          <p className="cursor-pointer hover:underline">Road Tripe Listens</p>
+          <p className="cursor-pointer hover:underline">Summer Listens</p>
         </div>
         <div className="mb-5">
-          <a className="cursor-pointer hover:underline">
-            <p>History</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Biographies & Memoirs</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Business & Careers</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Health & Wellness</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Literacture & Fiction</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Children&apos;s Audiobooks</p>
-          </a>
-          <a className="cursor-pointer hover:underline">
-            <p>Comedy</p>
-          </a>
+          <p className="cursor-pointer hover:underline">History</p>
+          <p className="cursor-pointer hover:underline">
+            Biographies & Memoirs
+          </p>
+          <p className="cursor-pointer hover:underline">Business & Careers</p>
+          <p className="cursor-pointer hover:underline">Health & Wellness</p>
+          <p className="cursor-pointer hover:underline">
+            Literacture & Fiction
+          </p>
+          <p className="cursor-pointer hover:underline">
+            Children&apos;s Audiobooks
+          </p>
+          <p className="cursor-pointer hover:underline">Comedy</p>
         </div>
       </div>
       <hr className="my-5 border-gray-400 dark:border-gray-100" />

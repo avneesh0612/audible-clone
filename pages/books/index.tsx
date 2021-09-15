@@ -2,14 +2,14 @@ import Image from "next/image";
 import Header from "../../components/Header";
 import requests from "../../utils/requests";
 import Head from "next/head";
+import { book } from "../../types/Book";
 
 interface BookProps {
   books: any;
-  volume: any;
+  volume: string;
 }
 
 const index: React.FC<BookProps> = ({ books, volume }) => {
-  console.log(books);
   return (
     <div className="w-[82vw] flex  flex-col  items-center overflow-x-hidden justify-center mx-auto dark:text-gray-100">
       <Head>
@@ -21,10 +21,8 @@ const index: React.FC<BookProps> = ({ books, volume }) => {
         <p className="text-gray-600">{books.items.length} items</p>
       </div>
       <div className="flex w-4/6 mt-16 space-x-5 overflow-scroll hidescroll">
-        {books.items.map((book: any) => (
+        {books.items.map((book: book) => (
           <div key={book.id} className="bg-gray-100 shadow-xl">
-            {/* <h1>{book.volumeInfo.title}</h1>
-            <h1>{book.volumeInfo.authors}</h1> */}
             <div className="relative min-w-[100px] h-40">
               <Image
                 layout="fill"

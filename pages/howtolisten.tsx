@@ -1,10 +1,10 @@
-import Header from "components/Header";
+import Header from "../components/Header";
 import Head from "next/head";
-import Footer from "components/Footer";
+import Footer from "../components/Footer";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
 
-function howtolisten() {
+const howtolisten = () => {
   return (
     <div>
       <Head>
@@ -23,7 +23,7 @@ function howtolisten() {
         </div>
         <div className="mt-10">
           <Fade left>
-            <div className="div -mb-2 -mt-2">
+            <div className="-mt-2 -mb-2 div">
               <Image
                 src="https://m.media-amazon.com/images/G/31//AudibleIN/2018/audibleweb/October/5ways_banner1_desktop._CB1198675309_.jpg"
                 width={1000}
@@ -33,7 +33,7 @@ function howtolisten() {
             </div>
           </Fade>
           <Fade right>
-            <div className="div -mb-2 -mt-2">
+            <div className="-mt-2 -mb-2 div">
               <Image
                 src="https://m.media-amazon.com/images/G/31//AudibleIN/2018/audibleweb/October/5ways_to_get_most_desktop_banner2._CB1198675309_.jpg"
                 width={1000}
@@ -43,7 +43,7 @@ function howtolisten() {
             </div>
           </Fade>
           <Fade left>
-            <div className="div -mb-2 -mt-2">
+            <div className="-mt-2 -mb-2 div">
               <Image
                 src="https://m.media-amazon.com/images/G/31/AudibleIN/2018/audibleweb/October/5ways_banner3_desktop._CB481120297_.jpg"
                 width={1000}
@@ -53,7 +53,7 @@ function howtolisten() {
             </div>
           </Fade>
           <Fade right>
-            <div className="div -mb-2 -mt-2">
+            <div className="-mt-2 -mb-2 div">
               <Image
                 src="https://m.media-amazon.com/images/G/31//AudibleIN/2018/audibleweb/October/5ways_to_get_most_desktop_banner4._CB1198675309_.jpg"
                 width={1000}
@@ -63,7 +63,7 @@ function howtolisten() {
             </div>
           </Fade>
           <Fade left>
-            <div className="div -mb-2 -mt-2">
+            <div className="-mt-2 -mb-2 div">
               <Image
                 src="https://m.media-amazon.com/images/G/31//AudibleIN/2018/audibleweb/October/5ways_to_get_most_desktop_banner5._CB1198675309_.jpg"
                 width={1000}
@@ -74,13 +74,13 @@ function howtolisten() {
           </Fade>
         </div>
         <Fade bottom>
-          <h1 className="text-3xl mt-5 justify-self-start mb-5 font-medium">
+          <h1 className="mt-5 mb-5 text-3xl font-medium justify-self-start">
             Start your journey with these great first listens
           </h1>
         </Fade>
-        <div className="grid grid-flow-col auto-cols-max gap-4 mb-10 mt-10">
+        <div className="grid grid-flow-col gap-4 mt-10 mb-10 auto-cols-max">
           <Fade left>
-            <div className="grid grid-rows-2 grid-flow-col gap-4">
+            <div className="grid grid-flow-col grid-rows-2 gap-4">
               <div>
                 <Image
                   src="https://m.media-amazon.com/images/I/51ohTl7gYFL._SL320_.jpg"
@@ -116,7 +116,7 @@ function howtolisten() {
             </div>
           </Fade>
           <Fade bottom>
-            <div className="grid grid-rows-1 grid-flow-col gap-4">
+            <div className="grid grid-flow-col grid-rows-1 gap-4">
               <Image
                 src="https://m.media-amazon.com/images/I/41Y1DPGbDvL._SL320_.jpg"
                 width={319}
@@ -126,7 +126,7 @@ function howtolisten() {
             </div>
           </Fade>
           <Fade right>
-            <div className="grid grid-rows-2 grid-flow-col gap-4">
+            <div className="grid grid-flow-col grid-rows-2 gap-4">
               <div>
                 <Image
                   src="https://m.media-amazon.com/images/I/51N-9WgqjsL._SL320_.jpg"
@@ -166,6 +166,6 @@ function howtolisten() {
       <Footer />
     </div>
   );
-}
+};
 
 export default howtolisten;

@@ -3,7 +3,7 @@ import BannerCheck from "./BannerCheck";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function Banner() {
+const Banner = () => {
   return (
     <div className="relative flex flex-col md:flex-row w-screen md:h-[50vh] bg-sapGreen mt-10">
       <Carousel
@@ -16,29 +16,29 @@ function Banner() {
       >
         <div className="relative flex w-screen h-full md:h-[52vh]">
           <div
-            className="relative w-screen h-full flex justify-center items-center flex-col"
+            className="relative flex flex-col items-center justify-center w-screen h-full"
             style={{
               background:
                 "url(https://m.media-amazon.com/images/G/31/AudibleIN/2020/audibleweb/March/adbl_IN_anon_weblab_top_desktop._CB1198675309_.jpg)",
             }}
           >
-            <h2 className="text-4xl font-poppins text-white font-semibold">
+            <h2 className="text-4xl font-semibold text-white font-poppins">
               BOOKS. STORIES.
             </h2>
-            <h2 className="text-4xl font-poppins text-white font-semibold">
+            <h2 className="text-4xl font-semibold text-white font-poppins">
               TALK SHOWS.
             </h2>
-            <h2 className="text-4xl font-poppins text-white font-semibold">
+            <h2 className="text-4xl font-semibold text-white font-poppins">
               LIFE LESSONS.
             </h2>
             <p className="text-xl text-white text-opacity-60">
               Try Audible today. Cancel anytime
             </p>
             <div className="w-80 ml-9">
-              <button className=" transition duration-500 ease-in-out bg-darkYellow hover:bg-lightYellow py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-10 w-full">
+              <button className="w-full py-2 mt-10 transition duration-500 ease-in-out transform rounded-md bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110">
                 Start your free trial now
               </button>
-              <p className="text-white text-opacity-60 text-xs text-center">
+              <p className="text-xs text-center text-white text-opacity-60">
                 ₹199 per month after 30-day trial. Cancel anytime.
               </p>
             </div>
@@ -55,7 +55,7 @@ function Banner() {
             />
           </div>
           <div className="mx-auto md:mx-0">
-            <h2 className="text-white font-poppins text-3xl mt-5 font-semibold">
+            <h2 className="mt-5 text-3xl font-semibold text-white font-poppins">
               Try Audible today
             </h2>
             <div className="flex flex-col max-w-md">
@@ -69,10 +69,10 @@ function Banner() {
                 <BannerCheck text="Listen offline, at no extra cost." />
               </div>
               <div className="w-80 ml-9">
-                <button className="focus:outline-none outline-none transition duration-500 ease-in-out bg-darkYellow hover:bg-lightYellow py-2  transform hover:-translate-y-1 hover:scale-110 rounded-md mt-2 w-full">
+                <button className="w-full py-2 mt-2 transition duration-500 ease-in-out transform rounded-md outline-none focus:outline-none bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110">
                   Start your free trial now
                 </button>
-                <p className="text-white text-opacity-60 text-xs text-center">
+                <p className="text-xs text-center text-white text-opacity-60">
                   ₹199 per month after 30-day trial. Cancel anytime.
                 </p>
               </div>

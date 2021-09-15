@@ -1,4 +1,9 @@
-function FeatureItem({ title, description }) {
+interface FeatureItemProps {
+  title: string;
+  description: string;
+}
+
+const FeatureItem: React.FC<FeatureItemProps> = ({ title, description }) => {
   return (
     <div className="flex my-5">
       <div>
@@ -9,6 +14,6 @@ function FeatureItem({ title, description }) {
       </div>
     </div>
   );
-}
+};
 
 export default FeatureItem;

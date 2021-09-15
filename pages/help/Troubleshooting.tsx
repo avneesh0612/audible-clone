@@ -1,4 +1,4 @@
-import Header from "components/Header";
+import Header from "../../components/Header";
 import Head from "next/head";
 import Fade from "react-reveal/Fade";
 import Image from "next/image";
@@ -15,6 +15,7 @@ function Troubleshooting() {
         <Fade left>
           <Image
             src="https://m.media-amazon.com/images/G/31/Audible/KM/Community/IN_Category_Icon_05_20201014_176X143.png"
+            alt="avatar"
             className="justify-center mb-10"
             width={176}
             height={143}
@@ -22,7 +23,7 @@ function Troubleshooting() {
         </Fade>
         <Fade right>
           <div className="grid ml-10">
-            <h1 className="text-2xl font-poppins font-bold mr-40 mb-1">
+            <h1 className="mb-1 mr-40 text-2xl font-bold font-poppins">
               Troubleshooting
             </h1>
             <p className="text-base font-poppins font-sm">
@@ -32,17 +33,17 @@ function Troubleshooting() {
           </div>
         </Fade>
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex justify-center w-full">
         <Fade left>
-          <div className="bg-gray-100 shadow-lg width800 p-8 justify-center">
-            <h1 className="text-xl font-medium justify-start font-poppins">
+          <div className="justify-center p-8 bg-gray-100 shadow-lg width800">
+            <h1 className="justify-start text-xl font-medium font-poppins">
               All Articles on Troubleshooting
             </h1>
             <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2 ">
               Why isn’t my audiobook showing up on my Android device?
             </p>
             <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
-              Why won't the Cloud Player load?
+              Why won&apos;t the Cloud Player load?
             </p>
             <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
               How can I troubleshoot playback issues on my device?
@@ -51,7 +52,7 @@ function Troubleshooting() {
               What browsers are compatible with Cloudplayer?
             </p>
             <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
-              What should I do if I'm experiencing payment issues?
+              What should I do if I&apos;m experiencing payment issues?
             </p>
             <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
               Why isn’t my audiobook showing up on my iOS device?
@@ -68,7 +69,7 @@ function Troubleshooting() {
             <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
               How can I redeem my G-Pay code?
             </p>
-            <p className="text-md cursor-pointer font-semibold text-linkBlue ">
+            <p className="font-semibold cursor-pointer text-md text-linkBlue ">
               See More ...
             </p>
           </div>

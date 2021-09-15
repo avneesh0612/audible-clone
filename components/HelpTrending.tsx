@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
-function HelpTrending({ image, text, url }) {
+interface HelpTrendingProps {
+  image: string;
+  text: string;
+  url: string;
+}
+
+const HelpTrending: React.FC<HelpTrendingProps> = ({ image, text, url }) => {
   const router = useRouter();
   return (
     <motion.div
@@ -21,6 +27,6 @@ function HelpTrending({ image, text, url }) {
       </h1>
     </motion.div>
   );
-}
+};
 
 export default HelpTrending;

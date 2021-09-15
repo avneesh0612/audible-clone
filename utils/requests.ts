@@ -1,4 +1,4 @@
-export default {
+const request: any = {
   fetchFiction: {
     title: "Fiction",
     url: `/volumes?q=fiction&key=${process.env.BOOK_API_KEY}`,
@@ -44,3 +44,5 @@ export default {
     url: `/volumes?q=business&key=${process.env.BOOK_API_KEY}`,
   },
 };
+
+export default request;

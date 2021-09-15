@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import useComponentVisible from "hooks/useComponentVisible";
+import useComponentVisible from "../hooks/useComponentVisible";
 import {
   ChevronUpIcon,
   ChevronDownIcon,
@@ -10,13 +10,13 @@ import {
 import Fade from "react-reveal/Fade";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import useDarkMode from "hooks/useDarkMode";
-import requests from "utils/requests";
+import useDarkMode from "../hooks/useDarkMode";
+import requests from "../utils/requests";
 import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
-function Header() {
+const Header = () => {
   const { ref, isComponentVisible, setIsComponentVisible } =
-    useComponentVisible(false);
+    useComponentVisible();
   const [colorTheme, setTheme] = useDarkMode();
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -25,18 +25,18 @@ function Header() {
   return (
     <Fade top>
       <header className="sticky mt-2 font-poppins !z-20">
-        <header className="flex px-3 text-xs font-semibold items-center justify-center">
+        <header className="flex items-center justify-center px-3 text-xs font-semibold">
           <span
             onClick={() => router.push("help")}
-            className="border-b-2 ml-auto dark:text-gray-100  border-transparent hover:border-gray-800 dark:hover:border-gray-100 cursor-pointer delay-100 duration-100"
+            className="ml-auto duration-100 delay-100 border-b-2 border-transparent cursor-pointer dark:text-gray-100 hover:border-gray-800 dark:hover:border-gray-100"
           >
             Help
           </span>
           <span className="ml-3 font-normal dark:text-gray-100">|</span>
           <div className="ml-3 md:mr-[270px] flex items-center justify-center dark:text-gray-100">
             <SignedOut>
-              <Link href="/sign-in">
-                <span className="cursor-pointer ml-3 font-normal dark:text-gray-100">
+              <Link href="/sign-in" passHref>
+                <span className="ml-3 font-medium cursor-pointer dark:text-gray-100">
                   Sign in
                 </span>
               </Link>
@@ -100,7 +100,7 @@ function Header() {
                       <div>
                         {Object.entries(requests)
                           .slice(0, 6)
-                          .map(([key, { title }]) => (
+                          .map(([key, { title }]: any) => (
                             <h2
                               key={key}
                               className="mr-3 text-black cursor-pointer hover:underline"
@@ -115,10 +115,10 @@ function Header() {
                       <div>
                         {Object.entries(requests)
                           .slice(6, 12)
-                          .map(([key, { title }]) => (
+                          .map(([key, { title }]: any) => (
                             <h2
                               key={key}
-                              className="mr-3 text-black  cursor-pointer hover:underline"
+                              className="mr-3 text-black cursor-pointer hover:underline"
                               onClick={() =>
                                 router.push(`/books/?volume=${key}`)
                               }
@@ -254,6 +254,6 @@ function Header() {
       </header>
     </Fade>
   );
-}
+};
 
 export default Header;

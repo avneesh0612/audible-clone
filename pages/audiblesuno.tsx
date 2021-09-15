@@ -1,17 +1,19 @@
-import Header from "components/Header";
+import Header from "../components/Header";
 import Head from "next/head";
-import Footer from "components/Footer";
+import Footer from "../components/Footer";
 import Image from "next/image";
-import InstructionItem from "components/InstructionItem";
+import InstructionItem from "../components/InstructionItem";
 import Fade from "react-reveal/Fade";
 import { useRouter } from "next/router";
 
-function audiblesuno() {
+const Audiblesuno = () => {
   const router = useRouter();
   return (
     <div>
       <Head>
-        <title>Audible Suno | India's most famous voices completely free</title>
+        <title>
+          Audible Suno | India&apos;s most famous voices completely free
+        </title>
         <link rel="icon" href="https://www.audible.in/favicon.ico" />
       </Head>
       <Header />
@@ -53,7 +55,7 @@ function audiblesuno() {
                 />
               </Fade>
             </div>
-            <button className="text-center px-3 py-2 my-1 mt-2 w-96 transition duration-500 ease-in-out transform rounded-sm bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
+            <button className="px-3 py-2 my-1 mt-2 text-center transition duration-500 ease-in-out transform rounded-sm w-96 bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
               Download Audible Suno app
             </button>
           </div>
@@ -95,7 +97,7 @@ function audiblesuno() {
               />
             </Fade>
           </div>
-          <h2 className="mb-5 mt-10 dark:text-gray-100">Learn more</h2>
+          <h2 className="mt-10 mb-5 dark:text-gray-100">Learn more</h2>
           <Image
             src="https://m.media-amazon.com/images/G/01/seo/authors-project/black-horizontal-divider-line._CB1552407217_.png"
             width={50}
@@ -181,9 +183,9 @@ function audiblesuno() {
             alt="alt-banner"
             className="mb-10"
           />
-          <div className="grid grid-flow-col auto-cols-max gap-4 mt-10">
+          <div className="grid grid-flow-col gap-4 mt-10 auto-cols-max">
             <Fade left>
-              <div className="grid grid-rows-2 grid-flow-col gap-4">
+              <div className="grid grid-flow-col grid-rows-2 gap-4">
                 <div>
                   <Image
                     src="https://m.media-amazon.com/images/I/51xsdzLsp8L._SL320_.jpg"
@@ -219,7 +221,7 @@ function audiblesuno() {
               </div>
             </Fade>
             <Fade bottom>
-              <div className="grid grid-rows-1 grid-flow-col gap-4">
+              <div className="grid grid-flow-col grid-rows-1 gap-4">
                 <Image
                   src="https://m.media-amazon.com/images/I/61a7sMc1P3L._SL320_.jpg"
                   width={319}
@@ -229,7 +231,7 @@ function audiblesuno() {
               </div>
             </Fade>
             <Fade right>
-              <div className="grid grid-rows-2 grid-flow-col gap-4">
+              <div className="grid grid-flow-col grid-rows-2 gap-4">
                 <div>
                   <Image
                     src="https://m.media-amazon.com/images/I/51bpZ8AQvoL._SL320_.jpg"
@@ -270,6 +272,6 @@ function audiblesuno() {
       <Footer />
     </div>
   );
-}
+};
 
-export default audiblesuno;
+export default Audiblesuno;

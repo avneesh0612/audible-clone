@@ -1,4 +1,4 @@
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <div className="w-full p-10 bg-gray-100 dark:bg-gray-800 dark:text-gray-100">
       <div className="grid w-3/4 grid-flow-row-dense mx-auto leading-loose max-w-7xl sm:grid-cols-4">
@@ -73,7 +73,7 @@ function Footer() {
             <p>Literacture & Fiction</p>
           </a>
           <a className="cursor-pointer hover:underline">
-            <p>Children's Audiobooks</p>
+            <p>Children&apos;s Audiobooks</p>
           </a>
           <a className="cursor-pointer hover:underline">
             <p>Comedy</p>
@@ -81,7 +81,7 @@ function Footer() {
         </div>
       </div>
       <hr className="my-5 border-gray-400 dark:border-gray-100" />
-      <div className="flex justify-evenly w-3/4 items-center mx-auto">
+      <div className="flex items-center w-3/4 mx-auto justify-evenly">
         <p className="border-r-[1px] pr-5 text-sm border-gray-800 dark:border-gray-100">
           © Copyright 1997 - 2021 Audible, Inc
         </p>
@@ -101,6 +101,6 @@ function Footer() {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

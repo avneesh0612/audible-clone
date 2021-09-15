@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/outline";
 
-function FAQItem({ question, answer }) {
+interface FAQItemProps {
+  question: string;
+  answer: string;
+}
+
+const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
@@ -32,6 +37,6 @@ function FAQItem({ question, answer }) {
       </motion.p>
     </div>
   );
-}
+};
 
 export default FAQItem;

@@ -1,10 +1,10 @@
-import Header from "components/Header";
+import Header from "../components/Header";
 import Head from "next/head";
-import Footer from "components/Footer";
+import Footer from "../components/Footer";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
 
-function listeningapps() {
+const listeningapps = () => {
   return (
     <div>
       <Head>
@@ -24,7 +24,7 @@ function listeningapps() {
           </div>
         </Fade>
         <Fade right>
-          <h1 className="text-3xl mt-5 justify-self-start mb-10 font-medium">
+          <h1 className="mt-5 mb-10 text-3xl font-medium justify-self-start">
             Start your journey with these great first listens
           </h1>
         </Fade>
@@ -46,15 +46,15 @@ function listeningapps() {
                     alt="alt-logo"
                   />
                 </div>
-                <p className="font-semibold text-md mt-1 text-center">
+                <p className="mt-1 font-semibold text-center text-md">
                   Android
                 </p>
               </div>
-              <button className="text-center px-10 py-2 my-1 mt-2 w-80 transition duration-500 ease-in-out transform rounded-sm bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
+              <button className="px-10 py-2 my-1 mt-2 text-center transition duration-500 ease-in-out transform rounded-sm w-80 bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
                 Get The App
               </button>
               <a
-                className="text-center mt-2 text-sm font-medium text-blue-800"
+                className="mt-2 text-sm font-medium text-center text-blue-800"
                 href="https://help.audible.in/s/android-page?pf_rd_p=eddefac0-a15d-46f2-a315-c8c4d3a0847c&pf_rd_r=P53GBC99AF8RKYKJNHJJ"
               >
                 Visit the Support Page
@@ -70,15 +70,15 @@ function listeningapps() {
                     alt="alt-logo"
                   />
                 </div>
-                <p className="font-semibold text-md mt-1 text-center">
+                <p className="mt-1 font-semibold text-center text-md">
                   iPhone/iPod Touch
                 </p>
               </div>
-              <button className="text-center px-10 py-2 my-1 mt-2 w-80 transition duration-500 ease-in-out transform rounded-sm bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
+              <button className="px-10 py-2 my-1 mt-2 text-center transition duration-500 ease-in-out transform rounded-sm w-80 bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
                 Get The App
               </button>
               <a
-                className="text-center mt-2 text-sm font-medium text-blue-800"
+                className="mt-2 text-sm font-medium text-center text-blue-800"
                 href="https://help.audible.in/s/android-page?pf_rd_p=eddefac0-a15d-46f2-a315-c8c4d3a0847c&pf_rd_r=P53GBC99AF8RKYKJNHJJ"
               >
                 Visit the Support Page
@@ -104,15 +104,15 @@ function listeningapps() {
                     alt="alt-logo"
                   />
                 </div>
-                <p className="font-semibold text-md mt-1 text-center">
+                <p className="mt-1 font-semibold text-center text-md">
                   Android
                 </p>
               </div>
-              <button className="text-center px-10 py-2 my-1 mt-2 w-80 transition duration-500 ease-in-out transform rounded-sm bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
+              <button className="px-10 py-2 my-1 mt-2 text-center transition duration-500 ease-in-out transform rounded-sm w-80 bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
                 Get The App
               </button>
               <a
-                className="text-center mt-2 text-sm font-medium text-blue-800"
+                className="mt-2 text-sm font-medium text-center text-blue-800"
                 href="https://help.audible.in/s/android-page?pf_rd_p=47f52103-8935-40c7-8550-0733cb5fbf11&pf_rd_r=P53GBC99AF8RKYKJNHJJ"
               >
                 Visit the Support Page
@@ -128,13 +128,13 @@ function listeningapps() {
                     alt="alt-logo"
                   />
                 </div>
-                <p className="font-semibold text-md mt-1 text-center">iPad</p>
+                <p className="mt-1 font-semibold text-center text-md">iPad</p>
               </div>
-              <button className="text-center px-10 py-2 my-1 mt-2 w-80 transition duration-500 ease-in-out transform rounded-sm bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
+              <button className="px-10 py-2 my-1 mt-2 text-center transition duration-500 ease-in-out transform rounded-sm w-80 bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
                 Get The App
               </button>
               <a
-                className="text-center mt-2 text-sm font-medium text-blue-800"
+                className="mt-2 text-sm font-medium text-center text-blue-800"
                 href="https://help.audible.in/s/ios_page?pf_rd_p=47f52103-8935-40c7-8550-0733cb5fbf11&pf_rd_r=P53GBC99AF8RKYKJNHJJ"
               >
                 Visit the Support Page
@@ -160,11 +160,11 @@ function listeningapps() {
                     alt="alt-logo"
                   />
                 </div>
-                <p className="font-semibold text-md mt-1 text-center">
+                <p className="mt-1 font-semibold text-center text-md">
                   Stream Your Audio
                 </p>
               </div>
-              <button className="text-center px-10 py-2 my-1 mt-2 w-80 transition duration-500 ease-in-out transform rounded-sm bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
+              <button className="px-10 py-2 my-1 mt-2 text-center transition duration-500 ease-in-out transform rounded-sm w-80 bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
                 Get The App
               </button>
             </div>
@@ -178,11 +178,11 @@ function listeningapps() {
                     alt="alt-logo"
                   />
                 </div>
-                <p className="font-semibold text-md mt-1 text-center">
+                <p className="mt-1 font-semibold text-center text-md">
                   Apple Books & iTunes
                 </p>
               </div>
-              <button className="text-center px-10 py-2 my-1 mt-2 w-80 transition duration-500 ease-in-out transform rounded-sm bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
+              <button className="px-10 py-2 my-1 mt-2 text-center transition duration-500 ease-in-out transform rounded-sm w-80 bg-darkYellow hover:bg-lightYellow hover:-translate-y-1 hover:scale-110 focus:outline-none">
                 Get The App
               </button>
             </div>
@@ -190,13 +190,13 @@ function listeningapps() {
         </Fade>
         <div>
           <Fade right>
-            <h3 className="my-2 text-xl mt-20 font-medium dark:text-gray-100">
+            <h3 className="my-2 mt-20 text-xl font-medium dark:text-gray-100">
               Still have questions?
             </h3>
           </Fade>
           <Fade left>
-            <div className="text-center mb-20 mt-6">
-              <a className="text-center cursor-pointer mt-2 text-sm font-medium text-blue-800">
+            <div className="mt-6 mb-20 text-center">
+              <a className="mt-2 text-sm font-medium text-center text-blue-800 cursor-pointer">
                 Contact us
               </a>
             </div>
@@ -206,6 +206,6 @@ function listeningapps() {
       <Footer />
     </div>
   );
-}
+};
 
 export default listeningapps;

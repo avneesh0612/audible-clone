@@ -1,6 +1,16 @@
 import Image from "next/image";
 
-function InstructionItem({ image, heading, description }) {
+interface InstructionItemProps {
+  image: string;
+  heading?: string;
+  description?: string;
+}
+
+const InstructionItem: React.FC<InstructionItemProps> = ({
+  image,
+  heading,
+  description,
+}) => {
   return (
     <div className="p-7">
       <Image src={image} width={120} height={120} alt="alt-logo" />
@@ -8,6 +18,6 @@ function InstructionItem({ image, heading, description }) {
       <p className="text-sm text-gray-400 dark:text-gray-200">{description}</p>
     </div>
   );
-}
+};
 
 export default InstructionItem;

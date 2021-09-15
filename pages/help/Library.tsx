@@ -1,4 +1,4 @@
-import Header from "components/Header";
+import Header from "../../components/Header";
 import Head from "next/head";
 import Fade from "react-reveal/Fade";
 import Image from "next/image";
@@ -15,6 +15,7 @@ function Help() {
         <Fade left>
           <Image
             src="https://m.media-amazon.com/images/G/31/Audible/KM/Community/IN_Category_Icon_04_20201014_176X143.png"
+            alt="avatar"
             className="justify-center mb-10"
             width={176}
             height={143}
@@ -22,7 +23,7 @@ function Help() {
         </Fade>
         <Fade right>
           <div className="grid ml-10">
-            <h1 className="text-2xl font-poppins font-bold mr-40 mb-1">
+            <h1 className="mb-1 mr-40 text-2xl font-bold font-poppins">
               Library
             </h1>
             <p className="text-base font-poppins font-sm">
@@ -32,10 +33,10 @@ function Help() {
           </div>
         </Fade>
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex justify-center w-full">
         <Fade left>
-          <div className="bg-gray-100 shadow-lg width800 p-8 justify-center">
-            <h1 className="text-xl font-medium justify-start font-poppins">
+          <div className="justify-center p-8 bg-gray-100 shadow-lg width800">
+            <h1 className="justify-start text-xl font-medium font-poppins">
               All Articles on Library
             </h1>
             <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2 ">
@@ -69,7 +70,7 @@ function Help() {
             <p className="text-lg cursor-pointer text-linkBlue padding active:ring-yellow-300 active:ring-2">
               How can I add titles to a Collection in the iOS app?
             </p>
-            <p className="text-md cursor-pointer font-semibold text-linkBlue ">
+            <p className="font-semibold cursor-pointer text-md text-linkBlue ">
               See More ...
             </p>
           </div>

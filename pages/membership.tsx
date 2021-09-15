@@ -1,13 +1,12 @@
-import React from "react";
 import Head from "next/head";
-import Header from "components/Header";
-import Footer from "components/Footer";
-import InstructionItem from "components/InstructionItem";
-import FeatureItem from "components/FeatureItem";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import InstructionItem from "../components/InstructionItem";
+import FeatureItem from "../components/FeatureItem";
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 
-function AboutMembership() {
+const AboutMembership = () => {
   return (
     <div className="dark:text-gray-100">
       <Head>
@@ -24,7 +23,7 @@ function AboutMembership() {
 
               <div className="my-4 text-xl">
                 <h2>Millions of listeners love being Audible members.</h2>
-                <h2>It's easy to see why.</h2>
+                <h2>It&apos;s easy to see why.</h2>
               </div>
 
               <button className="text-black transition duration-500 ease-in-out bg-[#FFA000] hover:bg-[#FFC849] py-2 transform hover:-translate-y-1 hover:scale-110 rounded-md w-full">
@@ -97,7 +96,9 @@ function AboutMembership() {
 
         <div className="py-5 bg-gray-900">
           <div className="max-w-sm mx-auto text-center">
-            <h2 className="text-2xl font-medium text-white">We're Listening</h2>
+            <h2 className="text-2xl font-medium text-white">
+              We&apos;re Listening
+            </h2>
             <Jump>
               <InstructionItem
                 description="Our Customer Care team is available to help you get set up, answer questions, and find the right listen. (Get Help)"
@@ -110,6 +111,6 @@ function AboutMembership() {
       <Footer />
     </div>
   );
-}
+};
 
 export default AboutMembership;

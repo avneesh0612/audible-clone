@@ -1,7 +1,7 @@
-import Header from "components/Header";
+import Header from "../../components/Header";
 import Head from "next/head";
 import Image from "next/image";
-import HelpTrending from "components/HelpTrending";
+import HelpTrending from "../../components/HelpTrending";
 import Fade from "react-reveal/Fade";
 
 function Help() {
@@ -18,13 +18,14 @@ function Help() {
           layout="fill"
           objectFit="contain"
           src="https://m.media-amazon.com/images/G/31/Audible/KM/Community/IN_hero_noText_1158x487.jpg"
+          alt="banner"
         />
         <h3 className="absolute top-0 right-0 mr-16 text-4xl font-semibold text-white mt-80">
           How can we help?
         </h3>
       </div>
       <h1 className="text-center">
-        <h2 className="-mt-2 text-2xl font-semibold">What's Trending?</h2>
+        <h2 className="-mt-2 text-2xl font-semibold">What&apos;s Trending?</h2>
       </h1>
       <div className="flex flex-wrap items-center justify-center mt-10 mb-5 space-x-5 space-y-3">
         <Fade left>
@@ -103,7 +104,7 @@ function Help() {
         </div>
       </div>
       <div className="relative w-full mt-10 h-60">
-        <div style={{ zIndex: "-1" }}>
+        <div style={{ zIndex: -1 }}>
           <Image
             layout="fill"
             objectFit="contain"

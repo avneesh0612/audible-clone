@@ -28,7 +28,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
               url: "/icon.jpg",
               width: 512,
               height: 512,
-              alt: "Auible",
+              alt: "Audible",
             },
           ],
           site_name: "Audible",

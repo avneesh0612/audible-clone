@@ -1,57 +1,49 @@
-# Audible clone (open source)
+<h1 align="center">Welcome to Audible Clone 👋</h1>
+<p>
+  <a href="https://github.com/avneesh0612/audible-clone/blob/main/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/avneesh0612" target="_blank">
+    <img alt="Twitter: avneesh0612" src="https://img.shields.io/twitter/follow/avneesh0612.svg?style=social" />
+  </a>
+</p>
 
-We are going to create a pr. You need to know basic git and github commands to make a pr. If you don't know about it, check my [Git and Github crash course](https://medium.com/geekculture/git-and-github-crash-course-b44f4885ff66 "Git and Github crash course")
+### 🏠 [Homepage](https://audible.vercel.app/)
 
-Click on fork in the top left corner of your screen. Clone the repo you have been redirected to
+### ✨ [Demo](https://audible.vercel.app/)
 
-```bash
-git clone url_redirected_to
-```
+## Install
 
-### Installing dependencies
-
-If you use yarn then run
-
-```bash
+```sh
 yarn install
 ```
 
-and if you use npm delete yarn.lock and run
+## Usage
 
-```bash
-npm install
-```
-
-### Creating a new branch
-
-```bash
-git checkout -b new-feature
-```
-
-### Starting server
-
-If you are using yarn then run
-
-```bash
+```sh
 yarn dev
 ```
 
-and if you using npm run
+## 🤝 Contributing
 
-```bash
-npm run dev
-```
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/avneesh0612/audible-clone/issues).
 
-## Creating a PR
+See [Contribution.MD](https://github.com/avneesh0612/audible-clone/blob/main/CONTRIBUTING.md) for details about how to contribute
 
-Checkout [this](https://medium.com/weekly-webtips/how-to-contribute-to-an-open-source-project-and-make-a-pr-cc92f6c9831d) article to make a PR
+## Author
 
-## Configuring Clerk
+👤 **Avneesh Agarwal**
 
-Checkout [this](https://medium.com/geekculture/mastering-clerk-authentication-with-the-next-js-standard-setup-c66b97bac724) article to configure Clerk
+- Website: https://audible.vercel.app/
+- Twitter: [@avneesh0612](https://twitter.com/avneesh0612)
+- Github: [@avneesh0612](https://github.com/avneesh0612)
+- LinkedIn: [@avneesh-agarwal-78312b20a](https://linkedin.com/in/avneesh-agarwal-78312b20a)
 
-### Contributors:
+## Show your support
 
-[
-![Contributors](https://contrib.rocks/image?repo=avneesh0612/audible)
-](https://github.com/avneesh0612/audible/graphs/contributors)
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2021 [Avneesh Agarwal](https://github.com/avneesh0612).<br />
+This project is [MIT](https://github.com/avneesh0612/audible-clone/blob/main/LICENSE) licensed.

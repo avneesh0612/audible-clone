@@ -46,9 +46,10 @@ npm run dev
 
 Checkout [this](https://medium.com/weekly-webtips/how-to-contribute-to-an-open-source-project-and-make-a-pr-cc92f6c9831d) article to make a PR
 
-## Configuring Clerk
+## Environment Variables
 
-Checkout [this](https://medium.com/geekculture/mastering-clerk-authentication-with-the-next-js-standard-setup-c66b97bac724) article to configure Clerk
+NEXT_PUBLIC_CLERK_FRONTEND_API=clerk.zxz8x.5gnwy.lcl.dev
+BOOK_API_KEY=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg
 
 ### Contributors:
 

@@ -48,8 +48,10 @@ Checkout [this](https://medium.com/weekly-webtips/how-to-contribute-to-an-open-s
 
 ## Environment Variables
 
+```
 NEXT_PUBLIC_CLERK_FRONTEND_API=clerk.zxz8x.5gnwy.lcl.dev
 BOOK_API_KEY=AIzaSyAJRhBIWSd1ucYGCoz7Wr5IKC0U-IL58Vg
+```
 
 ### Contributors:
 
